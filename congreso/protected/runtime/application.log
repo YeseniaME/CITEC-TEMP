@@ -1,0 +1,65 @@
+2015/03/22 06:23:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "evento/admin".' in C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('evento/admin')
+#1 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\topicosweb\11030704\congreso\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/topicosweb/11030704/congreso/?r=evento/admin
+HTTP_REFERER=http://localhost/topicosweb/11030704/congreso/
+---
+2015/03/22 06:25:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "evento/admin".' in C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('evento/admin')
+#1 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\topicosweb\11030704\congreso\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/topicosweb/11030704/congreso/?r=evento/admin
+HTTP_REFERER=http://localhost/topicosweb/11030704/congreso/
+---
+2015/03/24 00:49:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site=index".' in C:\xampp\htdocs\topicos\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\topicos\framework\web\CWebApplication.php(141): CWebApplication->runController('site=index')
+#1 C:\xampp\htdocs\topicos\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\topicos\congreso\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/topicos/congreso/index.php?r=site=index
+---
+2015/03/25 16:27:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/view".' in C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/view')
+#1 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\topicosweb\congreso\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/topicosweb/congreso/index.php?r=admin/view
+HTTP_REFERER=http://localhost:8080/topicosweb/congreso/index.php
+---
+2015/03/25 16:27:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/view".' in C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/view')
+#1 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\topicosweb\congreso\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/topicosweb/congreso/index.php?r=admin/view
+HTTP_REFERER=http://localhost:8080/topicosweb/congreso/index.php
+---
+2015/03/26 00:29:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "view".' in C:\xampp\htdocs\topicosweb\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CController.php(270): CController->missingAction('view')
+#1 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): CController->run('view')
+#2 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('site/view')
+#3 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\topicosweb\congreso\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/topicosweb/congreso/index.php?r=site/view&id=6
+HTTP_REFERER=http://localhost:8080/topicosweb/congreso/index.php?r=site/index
+---
+2015/03/26 00:30:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "usuarioRegistrado".' in C:\xampp\htdocs\topicosweb\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\topicosweb\framework\web\CController.php(270): CController->missingAction('usuarioRegistra...')
+#1 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(282): CController->run('usuarioRegistra...')
+#2 C:\xampp\htdocs\topicosweb\framework\web\CWebApplication.php(141): CWebApplication->runController('site/usuarioReg...')
+#3 C:\xampp\htdocs\topicosweb\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\topicosweb\congreso\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/topicosweb/congreso/index.php?r=site/usuarioRegistrado
+---
