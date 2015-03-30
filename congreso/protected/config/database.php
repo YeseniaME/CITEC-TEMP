@@ -7,8 +7,8 @@ return array(
 	
 	'connectionString' => 'mysql:host=localhost;dbname=citec',
 	'emulatePrepare' => true,
-	'username' => 'citec',
-	'password' => 'citec',
+	'username' => 'root',
+	'password' => '',
 	'charset' => 'utf8',
 	
 );

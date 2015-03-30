@@ -1,9 +1,13 @@
-
 /* body  backgroun controla al fondo de la portada*/
-body{ background:#747474; padding:0; color: #454545; font-family: "Myriad Pro";}
+body{ padding:0; color: #454545; 
+    font-family: Verdana, Geneva, sans-serif;
+    background: url(../../img/wg.png);
+
+}
 a,a:hover{text-decoration:none; color:#FE5214}
 h2,h3{color:#FE5214; text-rendering: optimizelegibility; }
-h1{padding:0px; font-weight: 200;font-size: 32px;color: #3f3f3f;margin: 0;font-family: "Myriad Pro";text-rendering: optimizelegibility;}
+h1{padding:0px; font-weight: 200;font-size: 32px;color: #3f3f3f;margin: 0;
+    font-family: Verdana, Geneva, sans-serif;text-rendering: optimizelegibility;}
 .debug{ border:1px solid #FFCC33;}
 h1.brand {
     background: none repeat scroll 0 0 # ;
@@ -28,28 +32,32 @@ h1.brand {
 .navbar{margin-bottom:-1px; margin-top:28px; position:relative }
 .navbar .nav, .navbar .nav > li{float:none; text-align:right; margin-left:25px;}
 .nav li{display:inline-block; float:none;}
-.nav a {padding: 3px 18px;font-size: 23px; display: inline-block; color:#3a494c; font-family: "Myriad Pro";}
+.nav a {padding: 3px 18px;font-size: 23px; display: inline-block; color:#3a494c; 
+    font-family: Verdana, Geneva, sans-serif;}
 
  #portfolioSection, #ourServices, #blogSection{padding:70px 0 ; }
 .txtR{text-align:right}
 
-#ourServices{background: #ffffff;text-align: center;border-top: 1px solid #ddd;}
+#ourServices{background: #fff; text-align: center;
+    border-top: 1px solid #fff;}
 #ourServices h4 {
     margin:25px 0;
 }
 
 #ourServices p {
-    color: #5E5E5E;
+    color: #000000;
     font-size: 19px;
     line-height: 27px;
 }
 
 
 
-#portfolioSection{background: #99d4a5;text-align: center;}
-#portfolioSection h1{ text-transform:uppercase; color:#fff; padding:0;font-size:60px;}
+#portfolioSection{background: url(../../img/wg.png); 
+    text-align: center;}
+#portfolioSection h1{ text-transform:uppercase; color:#000000; 
+    padding:0;font-size:60px;}
 #portfolioSection p {
-    color: #fff;
+    color: #000000;
     font-size: 19px;
     line-height: 27px;
 	margin: 15px 0;
@@ -60,13 +68,16 @@ h1.brand {
 
 
 
-#blogSection{background: #fff;}
+#blogSection{background: url(../../img/wg.png); }
 #blogSection p{margin:20px 0;}
 #blogSection .span12{ margin:0;margin-bottom: 36px;}
 
 
-#meetourteamSection{ padding:70px 0 ; background:#ddb3c2;  text-align: center; }
-#meetourteamSection h1{ text-transform:uppercase; color:#fff; padding:0; font-size:60px;}
+#meetourteamSection{ padding:70px 0 ; 
+    background:url(../../img/wg.png);   
+    text-align: center; }
+#meetourteamSection h1{ text-transform:uppercase; color:#000000; 
+    padding:0; font-size:60px;}
 #meetourteamSection .thumbnails  p {
     color: #909090;
     font-size: 22px;
@@ -75,7 +86,7 @@ h1.brand {
 }
 
 #meetourteamSection  p {
-    color: #fff;
+    color: #000000;
     font-size: 19px;
     line-height: 27px;
 	margin: 15px 0;
@@ -95,8 +106,10 @@ h1.brand {
 #meetourteamSection .thumbnails a.pin{ height:56px; width:56px; background:url(../img/thum-p-icon.png) no-repeat center center;display:inline-block;}
 
 
-#recentpostSection{ padding:70px 0 ; background:#b5d5e1;  text-align: center; }
-#recentpostSection h1{ text-transform:uppercase; color:#fff; padding:0; font-size:60px;}
+#recentpostSection{ padding:70px 0 ; background:url(../../img/wg.png); 
+  text-align: center; }
+#recentpostSection h1{ text-transform:uppercase; color:#000000; 
+    padding:0; font-size:60px;}
 #recentpostSection .thumbnails  p {
     color: #909090;
     font-size: 22px;
@@ -106,7 +119,7 @@ h1.brand {
 }
 
 #recentpostSection  p {
-    color: #fff;
+    color: #000000;
     font-size: 19px;
     line-height: 27px;
 	margin: 15px 0;
@@ -124,11 +137,14 @@ h1.brand {
 
 
 
-#contactSection{ background:#3b3b3b; text-align:center; padding:70px 0 0;}
+#contactSection{ background:url(../../img/wg.png); 
+    text-align:center; 
+    padding:70px 0 0;}
 #contactSection .span8{ float:none; margin:0 auto;}
-#contactSection h1{ text-transform:uppercase; color:#fff; padding:0;font-size:60px;}
+#contactSection h1{ text-transform:uppercase; color:#000000; 
+    padding:0;font-size:60px;}
 #contactSection p {
-    color: #fff;
+    color: #000000;
     font-size: 19px;
     line-height: 27px;
 	margin: 15px 0;

@@ -41,10 +41,10 @@
 <p>En esta sección ecnontrarás todo lo que necesitas saber acerca del evento. Haz clic sobre la opción que desees ver en el menú de abajo.</p></div>
 <div class="container"> 
   <ul class="nav nav-pills">
-  <li class="active"><a href="#all" data-toggle="tab">COSTOS</a></li>
-    <li><a href="#web" data-toggle="tab">CALENDARIO</a></li>
-    <li><a href="#mobile" data-toggle="tab">CONVOCATORIA</a></li>
-    <li><a href="#photo" data-toggle="tab">MÁS INFORMACIÓN</a></li>
+  <a href="#all" data-toggle="tab">COSTOS</a></li>
+    <a href="#web" data-toggle="tab">CALENDARIO</a></li>
+    <a href="#mobile" data-toggle="tab">CONVOCATORIA</a></li>
+    <a href="#photo" data-toggle="tab">MÁS INFORMACIÓN</a></li>
     
   </ul>
 <div class="clr"></div>
@@ -232,7 +232,7 @@
   
   
   
-    <a href="#" class="btn btn-large btn-primary disabled">SHOW MORE</a>
+    <a href="#" class="btn btn-large btn-default">SHOW MORE</a>
 
   
   
@@ -259,7 +259,7 @@
     <h1>Lineamientos</h1>
     <p>En esete documento encontrará la especificación de lineamientos requeridos para la publicación de artículos</p>
         
-        <a href="#" class="btn btn-large btn-primary">Ver Documento</a>
+        <a href="#" class="btn btn-large btn-success">Ver Documento</a>
     </div>
         
         </div>
@@ -284,7 +284,7 @@
     <h1>Formato</h1>
     <p>Conozca y descargue el formato a utilizar para el artículo final.</p>
         
-        <a href="#" class="btn btn-large btn-primary">Ver Documento</a>
+        <a href="#" class="btn btn-large btn-success">Ver Documento</a>
     </div>
         
         </div>
@@ -412,7 +412,7 @@
           </div>
           
          
-          <button type="submit" class="btn btn-large btn-primary disabled">Enviar</button>
+          <button type="submit" class="btn btn-large btn-success">Enviar</button>
           
         </fieldset>
        
@@ -435,7 +435,7 @@
                 
         
   
-    <div class="span8 copyright"><p>  Instituto Tecnológico de Celaya | CITEC  </p></div>
+    <div class="span8 copyright"> <p  style="color:#000000">  Instituto Tecnológico de Celaya | CITEC  </p></div>
   </div>
 
         

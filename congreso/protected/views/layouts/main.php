@@ -10,6 +10,7 @@
     <link href="<?php echo Yii::app()->request->baseUrl; ?>/css/dashboard.css" rel="stylesheet">
 
     <script src="<?php echo Yii::app()->request->baseUrl; ?>/js/jquery.min.js"></script>
+    <link href="<?php echo Yii::app()->request->baseUrl; ?>/css/backg.css" rel="stylesheet">
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
 
@@ -44,7 +45,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.php?r=site/login">SITEC</a>
+          <a class="navbar-brand" href="index.php?r=site/login">CITEC</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
