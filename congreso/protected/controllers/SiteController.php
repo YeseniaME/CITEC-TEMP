@@ -43,6 +43,19 @@ class SiteController extends Controller
 		$this->layout='//layouts/public/column1';
 		$evento = Eventos::model()->findByPk('1');
 
+		$criteria= new CDbCriteria(); 
+	      $participantes  = Participantes::model()->tablename();
+          $participantestipo = ParticipantesTipos::model()->tablename();
+          $tiposparticipante = TiposDeParticipantes::model()->tablename();
+
+          $criteria->select = 't.nombres,t.apellidos,t.email';
+        $criteria->join =
+           'inner join '.$participantestipo.' pt on t.id_participante=pt.id_participante
+            inner join '.$tiposparticipante.' tp on tp.id_tipo=pt.id_tipo';
+        $criteria->compare('tp.tipo','congresista',true);
+
+		     $participante = Participantes::model()->findAll($criteria);
+
 		$model=new Participantes;
 
 		if(isset($_POST['Participantes']))
@@ -63,6 +76,7 @@ class SiteController extends Controller
 		$this->render('index',array(
 			'evento'=>$evento,
 			'model'=>$model,
+			'participante'=>$participante,
 		));
 	}
 

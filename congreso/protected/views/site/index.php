@@ -299,73 +299,36 @@
 
 <!-- Meet our team======================================== -->
 <div id="meetourteamSection">
-<div class="span6"><h1 class="cntr">Ponentes</h1>
-<p>Estos serán los ponentes (y sus proyectos) con los que contaremos durante el evento. </p></div>
-<div class="container"> 
-  
-<div class="tabbable tabs">
-<div class="tab-content label-primary">
-
-  <div class="tab-pane active" id="all">
-  <ul class="thumbnails">
-  
-    <li class="span4">
-      <div class="thumbnail">
-        <div class="blockDtl">
-        <a href="#" ><img src="themes/img/img-11.png" alt=""></a>
-                <h4>JOHN SMITH</h4>
-                <h5>Proyecto</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et quam est. </p>
-                <a class="facebook" href="#"></a>
-                    <a class="twitter" href="#"></a>
-                    <a class="pin" href="#"></a>
+  <div class="span6"><h1 class="cntr">Ponentes</h1>
+  <p>Estos serán los ponentes (y sus proyectos) con los que contaremos durante el evento. </p></div>
+    <div class="container"> 
+      <div class="tabbable tabs">
+        <div class="tab-content label-primary">
+          <div class="tab-pane active" id="all">
+              <ul class="thumbnails">
+              <?php 
+              foreach ($participante as $key => $value) {
+              ?>
+              <li class="span4">
+                <div class="thumbnail">
+                  <div class="blockDtl">
+                    <a href="#" ><img src="themes/img/img-11.png" alt=""></a>
+                      <h4><?php echo $value->nombres; ?></h4>
+                      <h5><?php echo $value->apellidos; ?></h5>
+                      <p><?php echo $value->email; ?></p>
+                      <a class="facebook" href="#"></a>
+                      <a class="twitter" href="#"></a>
+                      <a class="pin" href="#"></a>
+                     </div>
+                </div>
+              </li>
+              <?php } ?>
+              </ul>
+          </div>
         </div>
       </div>
-    </li>
-    <li class="span4">
-      <div class="thumbnail">
-        <div class="blockDtl">
-        <a href="#"><img src="themes/img/img-11.png" alt=""></a>
-                <h4>JOHN SMITH</h4>
-                <h5>Proyecto</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et quam est. </p>
-                <a class="facebook" href="#"></a>
-                    <a class="twitter" href="#"></a>
-                    <a class="pin" href="#"></a>
-        </div>
-      </div>
-    </li>
-    <li class="span4">
-      <div class="thumbnail">
-        <div class="blockDtl">
-        <a href="#"><img src="themes/img/img-11.png" alt=""></a>
-                <h4>JOHN SMITH</h4>
-                <h5>Proyecto</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et quam est. </p>
-                <a class="facebook" href="#"></a>
-                    <a class="twitter" href="#"></a>
-                    <a class="pin" href="#"></a>
-        </div>
-      </div>
-    </li>
-    
-      
-  </ul>
-   
-    
-  </div>
-  
-  
-  
-  
-
-  
-  
+    </div>
 </div>
-</div>
-</div>
-</div>
-
 
 
 
