@@ -1,8 +1,8 @@
 
 
 <div id="portfolioSection">
-	<div class="span6"><h1 class="cntr">Fesdfgdofhgdoi</h1>
-		<p>ensaje para el usuario registrado</p>
+	<div class="span6"><h1 class="cntr">Felicidades!</h1>
+		<p>Ya eres parte del <b>CITEC 2015</b></p>
 	</div>
 	<div class="container"> 
 

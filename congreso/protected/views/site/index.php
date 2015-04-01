@@ -55,8 +55,9 @@
         <div class="span4">
           <div class="info-img">
             <img src="themes/img/facebook.png">
+            <img src="themes/img/twitter.png" height="160" width="160">
           </div>
-          <h4>Siguenos</h4>
+          <h4>Siguenos en</h4>
         </div>
         </a>
       </div>
@@ -316,7 +317,7 @@
 <div id="contactSection">
   <div class="span8">
     <h1 class="cntr">Registro</h1>
-    <p>Llena el formulario para ser parte de los eventos de este <b>CITEC 2015</b></p></div>
+    <p><b>No te quedes fuera!</b> Inscribete para ser parte de los eventos de &eacute;ste <b>CITEC 2015</b></p></div>
     <div class="container"> 
       <div class="row"> 
         <div class="span8">
@@ -332,7 +333,8 @@
             <div class="form-group">
               <div class="controls">
                 <?php echo $form->labelEx($model,'nombres'); ?>
-                <?php echo $form->textField($model,'nombres',array('size'=>60,'maxlength'=>250,'class'=>'form-control','placeholder'=>'Nombre')); ?>
+                <?php echo $form->textField($model,'nombres',
+                array('size'=>60,'maxlength'=>250,'class'=>'form-control','placeholder'=>'Nombre(s)')); ?>
                 <?php echo $form->error($model,'nombres'); ?>
               </div>
             </div>
@@ -341,7 +343,8 @@
             <div class="form-group">
               <div class="controls">
                 <?php echo $form->labelEx($model,'apellidos'); ?>
-                <?php echo $form->textField($model,'apellidos',array('size'=>60,'maxlength'=>250,'class'=>'form-control','placeholder'=>'Apellidos')); ?>
+                <?php echo $form->textField($model,'apellidos',
+                array('size'=>60,'maxlength'=>250,'class'=>'form-control','placeholder'=>'Apellido(s)')); ?>
                 <?php echo $form->error($model,'apellidos'); ?>
               </div>
             </div>
@@ -350,7 +353,8 @@
             <div class="form-group">
               <div class="controls">
                 <?php echo $form->labelEx($model,'email'); ?>
-                <?php echo $form->textField($model,'email',array('size'=>60,'maxlength'=>250,'class'=>'form-control','placeholder'=>'Email')); ?>
+                <?php echo $form->textField($model,'email',
+                array('size'=>60,'maxlength'=>250,'class'=>'form-control','placeholder'=>'example@correo.com')); ?>
                 <?php echo $form->error($model,'email'); ?>
               </div>
             </div>
@@ -358,7 +362,8 @@
             <div class="form-group">
              <div class="controls">
               <?php echo $form->labelEx($model,'contraseña'); ?>
-              <?php echo $form->passwordField($model,'contraseña',array('size'=>60,'maxlength'=>250,'class'=>'form-control','placeholder'=>'Contraseña')); ?>
+              <?php echo $form->passwordField($model,'contraseña',
+              array('size'=>60,'maxlength'=>250,'class'=>'form-control','placeholder'=>'Contraseña')); ?>
               <?php echo $form->error($model,'contraseña'); ?>
              </div>
           </div>
@@ -366,7 +371,8 @@
             <div class="form-group">
               <div class="controls">
               <?php echo $form->labelEx($model,'veri_contraseña'); ?>
-              <?php echo $form->passwordField($model,'veri_contraseña',array('size'=>60,'maxlength'=>250,'class'=>'form-control','placeholder'=>'Verificar Contraseña')); ?>
+              <?php echo $form->passwordField($model,'veri_contraseña',
+              array('size'=>60,'maxlength'=>250,'class'=>'form-control','placeholder'=>'Contraseña')); ?>
               <?php echo $form->error($model,'veri_contraseña'); ?>           
             </div>
           </div>
@@ -383,11 +389,12 @@
       <div class=" span4 socialicon">
         <a class="facebook" href="http://www.facebook.com/xtendify"></a>
         <a class="twitter" href="http://www.twitter.com/xtendify"></a>
-        <a class="html5" href="#"></a>
-        <a class="icon2" href="#"></a>
+        <!--<a class="html5" href="#"></a>
+        <a class="icon2" href="#"></a>-->
       </div>
       <div class="span8 copyright"> 
-        <p style="color:#000">  Instituto Tecnol&oacute;gico de Celaya | CITEC  </p>
+        <img src="img/itc.png" height='50' width='50'>
+        <span style="font-weight: bold; color:#000;">  Instituto Tecnol&oacute;gico de Celaya | CITEC 2015 </span>
       </div>
     </div>
   </div> 
