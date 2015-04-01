@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 29-03-2015 a las 07:48:01
+-- Tiempo de generación: 01-04-2015 a las 08:26:55
 -- Versión del servidor: 5.6.20
 -- Versión de PHP: 5.5.15
 
@@ -85,9 +85,9 @@ CREATE TABLE IF NOT EXISTS `eventos` (
 --
 
 INSERT INTO `eventos` (`id_evento`, `nombre`, `logotipo`, `convocatoria`, `costo`, `fecha_inicio`, `fecha_fin`, `lugar`, `mas_informacion`) VALUES
-(1, 'Evento-1', 'C:\\xampp\\htdocs\\TAPW\\yii\\CITEC-TEMP\\images\\example.jpg', 'C:\\xampp\\htdocs\\TAPW\\yii\\CITEC-TEMP\\convocatoria\\example.pdf', '$300', '2015-03-30 00:00:00', '2015-04-13 00:00:00', 'Salon AG2', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc leo sem, sagittis ut feugiat in, laoreet et est. Sed finibus mi in sollicitudin eleifend. Pellentesque neque est, facilisis id tristique vel, hendrerit sit amet lectus. Nam tempor velit et ex aliquet laoreet. Proin facilisis leo nec erat dapibus pharetra. Pellentesque pellentesque ornare venenatis. '),
-(2, 'Evento-2', 'C:\\xampp\\htdocs\\TAPW\\yii\\CITEC-TEMP\\images\\example.jpg', 'C:\\xampp\\htdocs\\TAPW\\yii\\CITEC-TEMP\\convocatoria\\example.pdf', '$180', '2015-03-28 00:00:00', '2015-04-14 00:00:00', 'Salon AG3', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc leo sem, sagittis ut feugiat in, laoreet et est. Sed finibus mi in sollicitudin eleifend. Pellentesque neque est, facilisis id tristique vel, hendrerit sit amet lectus. Nam tempor velit et ex aliquet laoreet.'),
-(3, 'Evento-3', 'C:\\xampp\\htdocs\\TAPW\\yii\\CITEC-TEMP\\images\\example.jpg', 'C:\\xampp\\htdocs\\TAPW\\yii\\CITEC-TEMP\\convocatoria\\example.pdf', '$220', '2015-03-30 00:00:00', '2015-04-15 00:00:00', 'Laboratorio LPA', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc leo sem, sagittis ut feugiat in, laoreet et est. Sed finibus mi in sollicitudin eleifend. Pellentesque neque est, facilisis id tristique vel, hendrerit sit amet lectus. Nam tempor velit et ex aliquet laoreet.');
+(1, 'Evento-1', 'img\\logo-placeholder.jpg', 'C:\\xampp\\htdocs\\TAPW\\yii\\CITEC-TEMP\\convocatoria\\example.pdf', '$300', '2015-03-30 00:00:00', '2015-04-13 00:00:00', 'Salon AG2', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc leo sem, sagittis ut feugiat in, laoreet et est. Sed finibus mi in sollicitudin eleifend. Pellentesque neque est, facilisis id tristique vel, hendrerit sit amet lectus. Nam tempor velit et ex aliquet laoreet. Proin facilisis leo nec erat dapibus pharetra. Pellentesque pellentesque ornare venenatis. '),
+(2, 'Evento-2', 'img\\logo-placeholder.jpg', 'C:\\xampp\\htdocs\\TAPW\\yii\\CITEC-TEMP\\convocatoria\\example.pdf', '$180', '2015-03-28 00:00:00', '2015-04-14 00:00:00', 'Salon AG3', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc leo sem, sagittis ut feugiat in, laoreet et est. Sed finibus mi in sollicitudin eleifend. Pellentesque neque est, facilisis id tristique vel, hendrerit sit amet lectus. Nam tempor velit et ex aliquet laoreet.'),
+(3, 'Evento-3', 'img\\logo-placeholder.jpg', 'C:\\xampp\\htdocs\\TAPW\\yii\\CITEC-TEMP\\convocatoria\\example.pdf', '$220', '2015-03-30 00:00:00', '2015-04-15 00:00:00', 'Laboratorio LPA', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc leo sem, sagittis ut feugiat in, laoreet et est. Sed finibus mi in sollicitudin eleifend. Pellentesque neque est, facilisis id tristique vel, hendrerit sit amet lectus. Nam tempor velit et ex aliquet laoreet.');
 
 -- --------------------------------------------------------
 
@@ -100,7 +100,7 @@ CREATE TABLE IF NOT EXISTS `participantes` (
   `nombres` varchar(250) DEFAULT NULL,
   `apellidos` varchar(250) DEFAULT NULL,
   `email` varchar(250) DEFAULT NULL
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=7 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=8 ;
 
 --
 -- Volcado de datos para la tabla `participantes`
@@ -112,7 +112,8 @@ INSERT INTO `participantes` (`id_participante`, `nombres`, `apellidos`, `email`)
 (3, 'Michael', 'Jordan', 'michael@gmail.com'),
 (4, 'Lisa', 'Robinson', 'lisa@gmail.com'),
 (5, 'Ana', 'Frank', 'anita@gmail.com'),
-(6, 'Pedro', 'Picapiedra', 'picapiedra@gmail.com');
+(6, 'Pedro', 'Picapiedra', 'picapiedra@gmail.com'),
+(7, 'Luis', 'Saldaña', 'rmz.sla@gmail.com');
 
 -- --------------------------------------------------------
 
@@ -307,7 +308,7 @@ MODIFY `id_evento` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
 -- AUTO_INCREMENT de la tabla `participantes`
 --
 ALTER TABLE `participantes`
-MODIFY `id_participante` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
+MODIFY `id_participante` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=8;
 --
 -- AUTO_INCREMENT de la tabla `tipos_de_participantes`
 --

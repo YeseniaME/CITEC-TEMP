@@ -1,329 +1,309 @@
+<!-- GOOGLE MAPS -->
+<div id="Popup_lugar" class="Modal">
+  <div class="content">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3736.138410769463!2d-100.81252!3d20.541517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842cbabd3c2cd0ab%3A0x655a93bfa763b7ce!2sTecnologico+de+celaya+Campus+2!5e0!3m2!1ses!2s!4v1427825045855" 
+    width="600" height="450" frameborder="0" style="border:0">
+    </iframe>
+    <span class="close">
+  </div>
+</div>
+
+<div id="Popup_fecha" class="Modal">
+  <div class="content">
+    <p><b>
+      <?php echo $evento->nombre; ?>
+    </b></p>
+    <center>
+      <?php echo $evento->mas_informacion; ?>
+      <br><br>
+      <p><?php echo $evento->lugar; ?></p>
+      <br>
+      <img src="<?php echo $evento->logotipo; ?>">
+    </center>
+    <span class="close">
+  </div>
+</div>
+
+<!-- CONTENEDOR: INFORMACION -->
 <div id="ourServices">  
-<div class="container"> 
-        <div class="row">
-                
-                <div class="row-fluid">
-      <div class="span4">
-      
-      <div class="info-img">
-        <img src="themes/img/calendar.png" ></div>
-        <h4>¿Cuándo?</h4>
-        <p>Aquí pondremos la fecha cuando la sepamos XD 
-        <?php echo $evento->nombre; ?>
-        </p>
+  <div class="container"> 
+    <div class="row">
+      <div class="row-fluid">
+
+        <!--fecha de evento-->
+        <div class="span4">
+          <a href="#Popup_fecha">
+            <div class="info-img">
+              <img src="themes/img/calendar.png" >
+            </div>
+            <h4>¿Cu&aacute;ndo?</h4>
+          </a>
+        </div>
+
+        <!--lugar de evento-->
+        <div class="span4">
+          <a href="#Popup_lugar">
+            <div class="info-img">
+              <img src="themes/img/where.png">
+            </div>
+            <h4>¿D&oacute;nde?</h4>
+          </a>
+        </div>
+
+        <!--redes sociales-->
+        <a href="https://www.facebook.com/events/1420970331536992/">
+        <div class="span4">
+          <div class="info-img">
+            <img src="themes/img/facebook.png">
+          </div>
+          <h4>Siguenos</h4>
+        </div>
+        </a>
       </div>
-      <div class="span4">
-        <div class="info-img"><img src="themes/img/where.png" ></div>
-        <h4>¿Dónde?</h4>
-         <p>El evento se llevará acabo en el INSTITUTO TECNOLÓGICO DE CELAYA CAMPUS II</p>
-      </div>
-      <a href="https://www.facebook.com/events/1420970331536992/">
-      <div class="span4">
-        <div class="info-img"><img src="themes/img/facebook.png"></div>
-        <h4>Redes Sociales</h4>
-         <p>Visítanos para conocer los más recientes aconteceres del evento.</p>
-      </div>
-      </a>
     </div>
-    
-    
-    
-    
-    
-    
-</div>
-</div>
+  </div>
 </div>
 
-<!-- Our Portfolio======================================== -->
+<!-- CONTENEDOR: ESPECIFICACIONES -->
 <div id="portfolioSection">
-<div class="span6"><h1 class="cntr">Especificaciones</h1>
-<p>En esta sección ecnontrarás todo lo que necesitas saber acerca del evento. Haz clic sobre la opción que desees ver en el menú de abajo.</p></div>
-<div class="container"> 
-  <ul class="nav nav-pills">
-  <a href="#all" data-toggle="tab">COSTOS</a></li>
-    <a href="#web" data-toggle="tab">CALENDARIO</a></li>
-    <a href="#mobile" data-toggle="tab">CONVOCATORIA</a></li>
-    <a href="#photo" data-toggle="tab">MÁS INFORMACIÓN</a></li>
-    
-  </ul>
-<div class="clr"></div>
-<div class="tabbable tabs">
-<div class="tab-content label-primary">
+  <div class="span6">
+    <h1 class="cntr">Especificaciones</h1>
+    <p>En esta sección ecnontrarás todo lo que necesitas saber acerca del evento. Haz clic sobre la opción que desees ver en el menú de abajo.</p>
+  </div>
+  <div class="container"> 
+    <ul class="nav nav-pills">
+      <a href="#all" data-toggle="tab">COSTOS</a></li>
+      <a href="#web" data-toggle="tab">CALENDARIO</a></li>
+      <a href="#mobile" data-toggle="tab">CONVOCATORIA</a></li>
+      <a href="#photo" data-toggle="tab">MÁS INFORMACIÓN</a></li>  
+    </ul>
+  <div class="clr"></div>
+  <div class="tabbable tabs">
+    <div class="tab-content label-primary">
+      <div class="tab-pane active" id="all">
+        <ul class="thumbnails">
+          <li class="span3">
+            <div class="thumbnail">
+              <div class="blockDtl">
+              <a href="#myModal1" role="button"  data-toggle="modal"><img src="themes/img/img-4.png" alt=""></a>
+              </div>
+            </div>
+          </li>
+          <li class="span3">
+            <div class="thumbnail">
+              <div class="blockDtl">
+              <a href="#"><img src="themes/img/img-5.png" alt=""></a>
+              </div>
+            </div>
+          </li>
+          <li class="span3">
+            <div class="thumbnail">
+              <div class="blockDtl">
+              <a href="#"><img src="themes/img/img-6.png" alt=""></a>
+              </div>
+            </div>
+          </li><li class="span3">
+            <div class="thumbnail">
+              <div class="blockDtl">
+              <a href="#"><img src="themes/img/img-7.png" alt=""></a>
+              </div>
+            </div>
+          </li><li class="span3">
+            <div class="thumbnail">
+              <div class="blockDtl">
+              <a href="#"><img src="themes/img/img-8.png" alt=""></a>
+              </div>
+            </div>
+          </li>
+          <li class="span3">
+            <div class="thumbnail">
+              <div class="blockDtl">
+              <a href="#"><img src="themes/img/img-9.png" alt=""></a>
+              </div>
+            </div>
+          </li>   
+        </ul>
+      </div>
 
-  <div class="tab-pane active" id="all">
-  <ul class="thumbnails">
-  
-    <li class="span4">
-      <div class="thumbnail">
-        <div class="blockDtl">
-        <a href="#myModal1" role="button"  data-toggle="modal"><img src="themes/img/img-4.png" alt=""></a>
-        </div>
+      <div class="tab-pane" id="web">
+        <ul class="thumbnails">
+          <li class="span4">
+            <div class="thumbnail">
+              <div class="blockDtl">
+              <a href="#myModal1" role="button" data-toggle="modal"><img src="themes/img/img-5.png" alt=""></a>
+              </div>
+            </div>
+          </li>
+          <li class="span4">
+            <div class="thumbnail">
+              <div class="blockDtl">
+              <a href="#"><img src="themes/img/img-4.png" alt=""></a>
+              </div>
+            </div>
+          </li>
+          <li class="span4">
+            <div class="thumbnail">
+              <div class="blockDtl">
+              <a href="#"><img src="themes/img/img-6.png" alt=""></a>
+              </div>
+            </div>
+          </li><li class="span4">
+            <div class="thumbnail">
+              <div class="blockDtl">
+              <a href="#"><img src="themes/img/img-7.png" alt=""></a>
+              </div>
+            </div>
+          </li><li class="span4">
+            <div class="thumbnail">
+              <div class="blockDtl">
+              <a href="#"><img src="themes/img/img-8.png" alt=""></a>
+              </div>
+            </div>
+          </li>
+          <li class="span4">
+            <div class="thumbnail">
+              <div class="blockDtl">
+              <a href="#"><img src="themes/img/img-9.png" alt=""></a>
+              </div>
+            </div>
+          </li>     
+        </ul>
       </div>
-    </li>
-    <li class="span4">
-      <div class="thumbnail">
-        <div class="blockDtl">
-        <a href="#"><img src="themes/img/img-5.png" alt=""></a>
-        </div>
-      </div>
-    </li>
-    <li class="span4">
-      <div class="thumbnail">
-        <div class="blockDtl">
-        <a href="#"><img src="themes/img/img-6.png" alt=""></a>
-        </div>
-      </div>
-    </li><li class="span4">
-      <div class="thumbnail">
-        <div class="blockDtl">
-        <a href="#"><img src="themes/img/img-7.png" alt=""></a>
-        </div>
-      </div>
-    </li><li class="span4">
-      <div class="thumbnail">
-        <div class="blockDtl">
-        <a href="#"><img src="themes/img/img-8.png" alt=""></a>
-        </div>
-      </div>
-    </li>
-    <li class="span4">
-      <div class="thumbnail">
-        <div class="blockDtl">
-        <a href="#"><img src="themes/img/img-9.png" alt=""></a>
-        </div>
-      </div>
-    </li>   
-    
-      
-  </ul>
-    
-  </div>
-  
-  <div class="tab-pane" id="web">
-  <ul class="thumbnails">
-  
-    <li class="span4">
-      <div class="thumbnail">
-        <div class="blockDtl">
-        <a href="#myModal1" role="button" data-toggle="modal"><img src="themes/img/img-5.png" alt=""></a>
-        </div>
-      </div>
-    </li>
-    <li class="span4">
-      <div class="thumbnail">
-        <div class="blockDtl">
-        <a href="#"><img src="themes/img/img-4.png" alt=""></a>
-        </div>
-      </div>
-    </li>
-    <li class="span4">
-      <div class="thumbnail">
-        <div class="blockDtl">
-        <a href="#"><img src="themes/img/img-6.png" alt=""></a>
-        </div>
-      </div>
-    </li><li class="span4">
-      <div class="thumbnail">
-        <div class="blockDtl">
-        <a href="#"><img src="themes/img/img-7.png" alt=""></a>
-        </div>
-      </div>
-    </li><li class="span4">
-      <div class="thumbnail">
-        <div class="blockDtl">
-        <a href="#"><img src="themes/img/img-8.png" alt=""></a>
-        </div>
-      </div>
-    </li>
-    <li class="span4">
-      <div class="thumbnail">
-        <div class="blockDtl">
-        <a href="#"><img src="themes/img/img-9.png" alt=""></a>
-        </div>
-      </div>
-    </li>   
-    
-      
-  </ul>
-    
-  </div>
-  
-  <div class="tab-pane" id="mobile">
-  <ul class="thumbnails">
-  
-    <li class="span4">
-      <div class="thumbnail">
-        <div class="blockDtl">
-        <a href="#myModal1" role="button" data-toggle="modal"><img src="themes/img/img-5.png" alt=""></a>
-        </div>
-      </div>
-    </li>
-    <li class="span4">
-      <div class="thumbnail">
-        <div class="blockDtl">
-        <a href="#"><img src="themes/img/img-6.png" alt=""></a>
-        </div>
-      </div>
-    </li>
-    <li class="span4">
-      <div class="thumbnail">
-        <div class="blockDtl">
-        <a href="#"><img src="themes/img/img-4.png" alt=""></a>
-        </div>
-      </div>
-    </li><li class="span4">
-      <div class="thumbnail">
-        <div class="blockDtl">
-        <a href="#"><img src="themes/img/img-7.png" alt=""></a>
-        </div>
-      </div>
-    </li><li class="span4">
-      <div class="thumbnail">
-        <div class="blockDtl">
-        <a href="#"><img src="themes/img/img-8.png" alt=""></a>
-        </div>
-      </div>
-    </li>
-    <li class="span4">
-      <div class="thumbnail">
-        <div class="blockDtl">
-        <a href="#"><img src="themes/img/img-9.png" alt=""></a>
-        </div>
-      </div>
-    </li>   
-    
-      
-  </ul>
-    
-  </div>
-  
-  <div class="tab-pane" id="photo">
-  <ul class="thumbnails">
-  
-    <li class="span4">
-      <div class="thumbnail">
-        <div class="blockDtl">
-        <a href="#myModal1" role="button" data-toggle="modal"><img src="themes/img/img-7.png" alt=""></a>
-        </div>
-      </div>
-    </li>
-    <li class="span4">
-      <div class="thumbnail">
-        <div class="blockDtl">
-        <a href="#"><img src="themes/img/img-4.png" alt=""></a>
-        </div>
-      </div>
-    </li>
-    <li class="span4">
-      <div class="thumbnail">
-        <div class="blockDtl">
-        <a href="#"><img src="themes/img/img-6.png" alt=""></a>
-        </div>
-      </div>
-    </li>
-    
-  
-      
-  </ul>
-    
-  </div>
-  
-  
-  
-  
-    <a href="#" class="btn btn-large btn-default">SHOW MORE</a>
 
-  
-  
-</div>
-</div>
+      <div class="tab-pane" id="mobile">
+        <ul class="thumbnails">
+          <li class="span4">
+            <div class="thumbnail">
+              <div class="blockDtl">
+              <a href="#myModal1" role="button" data-toggle="modal"><img src="themes/img/img-5.png" alt=""></a>
+              </div>
+            </div>
+          </li>
+          <li class="span4">
+            <div class="thumbnail">
+              <div class="blockDtl">
+              <a href="#"><img src="themes/img/img-6.png" alt=""></a>
+              </div>
+            </div>
+          </li>
+          <li class="span4">
+            <div class="thumbnail">
+              <div class="blockDtl">
+              <a href="#"><img src="themes/img/img-4.png" alt=""></a>
+              </div>
+            </div>
+          </li><li class="span4">
+            <div class="thumbnail">
+              <div class="blockDtl">
+              <a href="#"><img src="themes/img/img-7.png" alt=""></a>
+              </div>
+            </div>
+          </li><li class="span4">
+            <div class="thumbnail">
+              <div class="blockDtl">
+              <a href="#"><img src="themes/img/img-8.png" alt=""></a>
+              </div>
+            </div>
+          </li>
+          <li class="span4">
+            <div class="thumbnail">
+              <div class="blockDtl">
+              <a href="#"><img src="themes/img/img-9.png" alt=""></a>
+              </div>
+            </div>
+          </li>     
+        </ul>
+      </div>
+      <div class="tab-pane" id="photo">
+        <ul class="thumbnails">
+          <li class="span4">
+            <div class="thumbnail">
+              <div class="blockDtl">
+              <a href="#myModal1" role="button" data-toggle="modal"><img src="themes/img/img-7.png" alt=""></a>
+              </div>
+            </div>
+          </li>
+          <li class="span4">
+            <div class="thumbnail">
+              <div class="blockDtl">
+              <a href="#"><img src="themes/img/img-4.png" alt=""></a>
+              </div>
+            </div>
+          </li>
+          <li class="span4">
+            <div class="thumbnail">
+              <div class="blockDtl">
+              <a href="#"><img src="themes/img/img-6.png" alt=""></a>
+              </div>
+            </div>
+          </li>  
+        </ul>
+      </div>
+      <a href="#" class="btn btn-large btn-default">Detalles</a>
+    </div>
+  </div>
 </div>
 </div>
 
-
-
-
-
-<!-- Blog Section -->
+<!-- CONTENEDOR: LINEAMIENTOS -->
 <div id="blogSection">
- 
- <div class="container">
-   
-   <div class="row span12"> 
-    
-        
-        <div class="span8">
-        
-    <div class="inner">
-    <h1>Lineamientos</h1>
-    <p>En esete documento encontrará la especificación de lineamientos requeridos para la publicación de artículos</p>
-        
-        <a href="#" class="btn btn-large btn-success">Ver Documento</a>
+  <div class="container">
+    <div class="row span12">
+      <div class="span2">
+        <img src="themes/img/lineamientos.png" alt="" />
+      </div>
+      <div class="span8">
+        <div class="inner">
+          <h1>Lineamientos</h1>
+          <p>Eespecificación de lineamientos necesarios para la publicación de artículos</p>
+          <a href="#" class="btn btn-large btn-success">Ver Documento</a>
+        </div>
+      </div>
     </div>
-        
+    <hr class="soften clear"/>
+    <div class="row span12">
+      <div class="span2">
+        <img src="themes/img/formato.png" alt="" />
+      </div>
+      <div class="span8">
+        <div class="inner">
+          <h1>Formato</h1>
+          <p>Conozca y descargue el formato para el artículo final.</p>
+          <a href="#" class="btn btn-large btn-success">Ver Documento</a>
         </div>
-        
-        <div class="span4">
-          <img src="themes/img/lineamientos.png" alt="" />
-        </div>
-        
-   </div>
-        
-        <hr class="soften clear"/>
-        
-    <div class="row span12">  
-    
-        <div class="span4">
-          <img src="themes/img/formato.png" alt="" />
-        </div>
-        
-        <div class="span8">
-        
-    <div class="inner">
-    <h1>Formato</h1>
-    <p>Conozca y descargue el formato a utilizar para el artículo final.</p>
-        
-        <a href="#" class="btn btn-large btn-success">Ver Documento</a>
+      </div>
     </div>
-        
-        </div>
-        
-       
-        
-   </div>    
-      
-   
   </div>
 </div>
 
-<!-- Meet our team======================================== -->
+<!-- CONTENEDOR: PONENTES -->
 <div id="meetourteamSection">
-  <div class="span6"><h1 class="cntr">Ponentes</h1>
-  <p>Estos serán los ponentes (y sus proyectos) con los que contaremos durante el evento. </p></div>
+  <div class="span6">
+    <h1 class="cntr">Ponentes</h1>
+    <p>Estos serán los ponentes (y sus proyectos) con los que contaremos durante el evento. </p></div>
     <div class="container"> 
       <div class="tabbable tabs">
         <div class="tab-content label-primary">
           <div class="tab-pane active" id="all">
-              <ul class="thumbnails">
-              <?php 
-              foreach ($participante as $key => $value) {
-              ?>
+            <ul class="thumbnails">
+            <?php 
+            foreach ($participante as $key => $value) {
+            ?>
               <li class="span4">
                 <div class="thumbnail">
                   <div class="blockDtl">
                     <a href="#" ><img src="themes/img/img-11.png" alt=""></a>
-                      <h4><?php echo $value->nombres; ?></h4>
-                      <h5><?php echo $value->apellidos; ?></h5>
-                      <p><?php echo $value->email; ?></p>
-                      <a class="facebook" href="#"></a>
-                      <a class="twitter" href="#"></a>
-                      <a class="pin" href="#"></a>
-                     </div>
+                    <h4><?php echo $value->nombres; ?></h4>
+                    <h5><?php echo $value->apellidos; ?></h5>
+                    <p><?php echo $value->email; ?></p>
+                    <a class="facebook" href="#"></a>
+                    <a class="twitter" href="#"></a>
+                    <a class="pin" href="#"></a>
+                  </div>
                 </div>
               </li>
               <?php } ?>
-              </ul>
+            </ul>
           </div>
         </div>
       </div>
@@ -332,81 +312,68 @@
 
 
 
-<!-- Contact Section -->
+<!-- CONTENEDOR: REGISTRO -->
 <div id="contactSection">
-<div class="span6"><h1 class="cntr">Registro</h1>
-<p>Por favor llene el siguiente formulario para registrarse como participante en el evento CITEC; ya sea como congresista o ponente.</p></div>
-  <div class="container"> 
-    <div class="row"> 
-    <div class="span8">
+  <div class="span8">
+    <h1 class="cntr">Registro</h1>
+    <p>Llena el formulario para ser parte de los eventos de este <b>CITEC 2015</b></p></div>
+    <div class="container"> 
+      <div class="row"> 
+        <div class="span8">
       
-      <?php $form=$this->beginWidget('CActiveForm', array(
-        'id'=>'participantes-form',
-        'enableAjaxValidation'=>false,
-      )); ?>
-
-        <fieldset>
-          <div class="control-group">
+          <?php $form=$this->beginWidget('CActiveForm', array(
+            'id'=>'participantes-form','enableAjaxValidation'=>false,
+            )
+          ); ?>
           
-          <div class="controls">
-            <?php echo $form->labelEx($model,'nombres'); ?>
-            <?php echo $form->textField($model,'nombres',array('size'=>60,'maxlength'=>250,'class'=>'form-control','placeholder'=>'Nombre')); ?>
-            <?php echo $form->error($model,'nombres'); ?>
-           
-          </div>
-          </div>
-           <div class="control-group">
-          
-            <div class="controls">
-              <?php echo $form->labelEx($model,'apellidos'); ?>
-              <?php echo $form->textField($model,'apellidos',array('size'=>60,'maxlength'=>250,'class'=>'form-control','placeholder'=>'Apellidos')); ?>
-              <?php echo $form->error($model,'apellidos'); ?>
-             
-            </div>
-          </div>
-           <div class="control-group">
-          
-            <div class="controls">
-              <?php echo $form->labelEx($model,'email'); ?>
-              <?php echo $form->textField($model,'email',array('size'=>60,'maxlength'=>250,'class'=>'form-control','placeholder'=>'Email')); ?>
-              <?php echo $form->error($model,'email'); ?>
+          <!--campos de registro-->
+          <fieldset>
+            <!--nombre-->
+            <div class="form-group">
+              <div class="controls">
+                <?php echo $form->labelEx($model,'nombres'); ?>
+                <?php echo $form->textField($model,'nombres',array('size'=>60,'maxlength'=>250,'class'=>'form-control','placeholder'=>'Nombre')); ?>
+                <?php echo $form->error($model,'nombres'); ?>
+              </div>
             </div>
 
-          </div>
-          
-         
-          <button type="submit" class="btn btn-large btn-success">Enviar</button>
-          
-        </fieldset>
-       
-<?php $this->endWidget(); ?>
-    </div> 
-    
-    
-    </div> 
-    </div> 
-        
-     <div class="footerSection container">
-  
-       
-                <div class=" span4 socialicon">
-                    <a class="facebook" href="http://www.facebook.com/xtendify"></a>
-                    <a class="twitter" href="http://www.twitter.com/xtendify"></a>
-                    <a class="html5" href="#"></a>
-                    <a class="icon2" href="#"></a>
-                </div>
-                
-        
-  
-    <div class="span8 copyright"> <p  style="color:#000000">  Instituto Tecnológico de Celaya | CITEC  </p></div>
-  </div>
+            <!--apellidos-->
+            <div class="form-group">
+              <div class="controls">
+                <?php echo $form->labelEx($model,'apellidos'); ?>
+                <?php echo $form->textField($model,'apellidos',array('size'=>60,'maxlength'=>250,'class'=>'form-control','placeholder'=>'Apellidos')); ?>
+                <?php echo $form->error($model,'apellidos'); ?>
+              </div>
+            </div>
 
-        
-        
-        
-</div> 
-<!-- Wrapper end -->
+            <!--email-->
+            <div class="form-group">
+              <div class="controls">
+                <?php echo $form->labelEx($model,'email'); ?>
+                <?php echo $form->textField($model,'email',array('size'=>60,'maxlength'=>250,'class'=>'form-control','placeholder'=>'Email')); ?>
+                <?php echo $form->error($model,'email'); ?>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-large btn-success">Registrar</button>
+          </fieldset>
 
+          <?php $this->endWidget(); ?>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONTENEDOR: FOOTER -->
+    <div class="footerSection container">
+      <div class=" span4 socialicon">
+        <a class="facebook" href="http://www.facebook.com/xtendify"></a>
+        <a class="twitter" href="http://www.twitter.com/xtendify"></a>
+        <a class="html5" href="#"></a>
+        <a class="icon2" href="#"></a>
+      </div>
+      <div class="span8 copyright"> 
+        <p style="color:#000">  Instituto Tecnol&oacute;gico de Celaya | CITEC  </p>
+      </div>
+    </div>
+  </div> 
 
 <a href="#" class="go-top" ><i class="icon-arrow-up"></i></a>
-
