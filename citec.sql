@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 01-04-2015 a las 08:26:55
+-- Tiempo de generación: 01-04-2015 a las 19:52:53
 -- Versión del servidor: 5.6.20
 -- Versión de PHP: 5.5.15
 
@@ -34,7 +34,17 @@ CREATE TABLE IF NOT EXISTS `actividades` (
   `fecha_inicio` datetime DEFAULT NULL,
   `fecha_fin` datetime DEFAULT NULL,
   `lugar` varchar(250) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=9 ;
+
+--
+-- Volcado de datos para la tabla `actividades`
+--
+
+INSERT INTO `actividades` (`id_actividad`, `id_tipo`, `id_evento`, `nombre`, `fecha_inicio`, `fecha_fin`, `lugar`) VALUES
+(1, 1, 1, 'android', '2015-03-19 00:00:00', '2015-03-20 05:00:00', 'lab 1'),
+(2, 2, 1, 'centro de computo', '2015-03-27 00:00:00', '2015-03-27 00:19:00', 'centro de computo itc'),
+(7, 1, 1, 'mant de laptop', '2015-03-21 00:00:00', '2015-03-21 08:00:00', 'itc'),
+(8, 1, 1, 'videojuego', '2015-03-19 03:00:00', '2015-03-20 05:00:00', 'uno');
 
 -- --------------------------------------------------------
 
@@ -51,16 +61,7 @@ CREATE TABLE IF NOT EXISTS `articulos` (
   `articulo_pdf` varchar(250) DEFAULT NULL,
   `aceptado` tinyint(1) DEFAULT NULL,
   `resultado` text
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
-
---
--- Volcado de datos para la tabla `articulos`
---
-
-INSERT INTO `articulos` (`id_articulo`, `id_participante`, `id_evento`, `titulo`, `resumen`, `articulo_pdf`, `aceptado`, `resultado`) VALUES
-(1, 1, 1, 'Ingenieria inversa', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc leo sem, sagittis ut feugiat in, laoreet et est. Sed finibus mi in sollicitudin eleifend. Pellentesque neque est, facilisis id tristique vel, hendrerit sit amet lectus. Nam tempor velit et ex aliquet laoreet.', 'C:\\xampp\\htdocs\\TAPW\\yii\\CITEC-TEMP\\convocatoria\\example.pdf', 1, 'Proin facilisis leo nec erat dapibus pharetra. Pellentesque pellentesque ornare venenatis.'),
-(2, 2, 2, 'Geolocalizacion', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc leo sem, sagittis ut feugiat in, laoreet et est. Sed finibus mi in sollicitudin eleifend. Pellentesque neque est, facilisis id tristique vel, hendrerit sit amet lectus. Nam tempor velit et ex aliquet laoreet.', 'C:\\xampp\\htdocs\\TAPW\\yii\\CITEC-TEMP\\convocatoria\\example.pdf', 1, 'Proin facilisis leo nec erat dapibus pharetra. Pellentesque pellentesque ornare venenatis.'),
-(3, 3, 3, 'Tecnologias moviles', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc leo sem, sagittis ut feugiat in, laoreet et est. Sed finibus mi in sollicitudin eleifend. Pellentesque neque est, facilisis id tristique vel, hendrerit sit amet lectus. Nam tempor velit et ex aliquet laoreet.', 'C:\\xampp\\htdocs\\TAPW\\yii\\CITEC-TEMP\\convocatoria\\example.pdf', 1, 'Proin facilisis leo nec erat dapibus pharetra. Pellentesque pellentesque ornare venenatis. Nunc ultrices viverra ante ullamcorper suscipit.');
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -78,16 +79,14 @@ CREATE TABLE IF NOT EXISTS `eventos` (
   `fecha_fin` datetime DEFAULT NULL,
   `lugar` varchar(250) DEFAULT NULL,
   `mas_informacion` text
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
 
 --
 -- Volcado de datos para la tabla `eventos`
 --
 
 INSERT INTO `eventos` (`id_evento`, `nombre`, `logotipo`, `convocatoria`, `costo`, `fecha_inicio`, `fecha_fin`, `lugar`, `mas_informacion`) VALUES
-(1, 'Evento-1', 'img\\logo-placeholder.jpg', 'C:\\xampp\\htdocs\\TAPW\\yii\\CITEC-TEMP\\convocatoria\\example.pdf', '$300', '2015-03-30 00:00:00', '2015-04-13 00:00:00', 'Salon AG2', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc leo sem, sagittis ut feugiat in, laoreet et est. Sed finibus mi in sollicitudin eleifend. Pellentesque neque est, facilisis id tristique vel, hendrerit sit amet lectus. Nam tempor velit et ex aliquet laoreet. Proin facilisis leo nec erat dapibus pharetra. Pellentesque pellentesque ornare venenatis. '),
-(2, 'Evento-2', 'img\\logo-placeholder.jpg', 'C:\\xampp\\htdocs\\TAPW\\yii\\CITEC-TEMP\\convocatoria\\example.pdf', '$180', '2015-03-28 00:00:00', '2015-04-14 00:00:00', 'Salon AG3', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc leo sem, sagittis ut feugiat in, laoreet et est. Sed finibus mi in sollicitudin eleifend. Pellentesque neque est, facilisis id tristique vel, hendrerit sit amet lectus. Nam tempor velit et ex aliquet laoreet.'),
-(3, 'Evento-3', 'img\\logo-placeholder.jpg', 'C:\\xampp\\htdocs\\TAPW\\yii\\CITEC-TEMP\\convocatoria\\example.pdf', '$220', '2015-03-30 00:00:00', '2015-04-15 00:00:00', 'Laboratorio LPA', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc leo sem, sagittis ut feugiat in, laoreet et est. Sed finibus mi in sollicitudin eleifend. Pellentesque neque est, facilisis id tristique vel, hendrerit sit amet lectus. Nam tempor velit et ex aliquet laoreet.');
+(1, 'Evento-1', 'img\\logo-placeholder.jpg', 'con.pdf', '$400', '2015-03-20 00:00:00', '2015-03-27 00:00:00', 'Salon AG3', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis elementum risus nec odio rutrum faucibus. Nam lectus urna, elementum sed feugiat at, scelerisque lobortis metus.');
 
 -- --------------------------------------------------------
 
@@ -99,21 +98,26 @@ CREATE TABLE IF NOT EXISTS `participantes` (
 `id_participante` int(11) NOT NULL,
   `nombres` varchar(250) DEFAULT NULL,
   `apellidos` varchar(250) DEFAULT NULL,
-  `email` varchar(250) DEFAULT NULL
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=8 ;
+  `email` varchar(250) DEFAULT NULL,
+  `contraseña` char(15) CHARACTER SET utf8 COLLATE utf8_spanish2_ci NOT NULL,
+  `veri_contraseña` char(15) CHARACTER SET utf8 COLLATE utf8_spanish2_ci NOT NULL
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=11 ;
 
 --
 -- Volcado de datos para la tabla `participantes`
 --
 
-INSERT INTO `participantes` (`id_participante`, `nombres`, `apellidos`, `email`) VALUES
-(1, 'Homero', 'Simpson', 'homero@gmail.com'),
-(2, 'Will', 'Smith', 'will@gmail.com'),
-(3, 'Michael', 'Jordan', 'michael@gmail.com'),
-(4, 'Lisa', 'Robinson', 'lisa@gmail.com'),
-(5, 'Ana', 'Frank', 'anita@gmail.com'),
-(6, 'Pedro', 'Picapiedra', 'picapiedra@gmail.com'),
-(7, 'Luis', 'Saldaña', 'rmz.sla@gmail.com');
+INSERT INTO `participantes` (`id_participante`, `nombres`, `apellidos`, `email`, `contraseña`, `veri_contraseña`) VALUES
+(1, 'marcos', 'lopez noriega', 'sf@gamil.com', '', ''),
+(2, 'miguel', 'cardoso perez', 'miguel@gamil.com', '', ''),
+(3, 'roberto', 'zepeda pantoja', 'manuel@hotmail.com', '', ''),
+(4, 'ricardo', 'luna gonzalez', 'rct@gamil.com', '', ''),
+(5, 'marcos', 'mendoza alamilla', 'gt@gamil.com', '', ''),
+(6, 'gergdfg', 'dfgdfgdfg', 'dfgdfgdfg', '', ''),
+(7, 'Oscar', 'Grimaldo', 'sfsdfsd', '', ''),
+(8, 'fgfg', 'dfgdf', 'dfgdfg', '', ''),
+(9, 'dffsdf', 'sdfsdf', 'sdfsdf', '', ''),
+(10, 'asdasdf', 'asdfasdf', 'asdfasdf', 'asdfasdf', '');
 
 -- --------------------------------------------------------
 
@@ -126,6 +130,13 @@ CREATE TABLE IF NOT EXISTS `participantes_actividades` (
   `id_actividad` int(11) NOT NULL,
   `asistio` tinyint(1) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Volcado de datos para la tabla `participantes_actividades`
+--
+
+INSERT INTO `participantes_actividades` (`id_participante`, `id_actividad`, `asistio`) VALUES
+(3, 2, 1);
 
 -- --------------------------------------------------------
 
@@ -144,16 +155,8 @@ CREATE TABLE IF NOT EXISTS `participantes_eventos` (
 --
 
 INSERT INTO `participantes_eventos` (`id_participante`, `id_evento`, `pagado`) VALUES
-(1, 1, '2015-03-30'),
-(1, 2, '2015-03-31'),
-(2, 1, '2015-03-31'),
-(2, 2, '2015-03-31'),
-(3, 2, '2015-04-06'),
-(3, 3, '2015-04-07'),
-(4, 2, '2015-04-01'),
-(5, 2, '2015-04-02'),
-(5, 3, '2015-04-01'),
-(6, 1, '2015-03-30');
+(3, 1, '2015-03-17'),
+(4, 1, '2015-03-15');
 
 -- --------------------------------------------------------
 
@@ -171,12 +174,11 @@ CREATE TABLE IF NOT EXISTS `participantes_tipos` (
 --
 
 INSERT INTO `participantes_tipos` (`id_tipo`, `id_participante`) VALUES
-(4, 1),
-(1, 2),
+(2, 1),
+(2, 2),
 (1, 3),
-(2, 4),
-(3, 5),
-(2, 6);
+(2, 3),
+(1, 5);
 
 -- --------------------------------------------------------
 
@@ -189,6 +191,14 @@ CREATE TABLE IF NOT EXISTS `ponentes_actividades` (
   `id_actividad` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+--
+-- Volcado de datos para la tabla `ponentes_actividades`
+--
+
+INSERT INTO `ponentes_actividades` (`id_participante`, `id_actividad`) VALUES
+(5, 1),
+(4, 2);
+
 -- --------------------------------------------------------
 
 --
@@ -198,17 +208,15 @@ CREATE TABLE IF NOT EXISTS `ponentes_actividades` (
 CREATE TABLE IF NOT EXISTS `tipos_de_participantes` (
 `id_tipo` int(11) NOT NULL,
   `tipo` varchar(250) DEFAULT NULL
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
 
 --
 -- Volcado de datos para la tabla `tipos_de_participantes`
 --
 
 INSERT INTO `tipos_de_participantes` (`id_tipo`, `tipo`) VALUES
-(1, 'Ponente'),
-(2, 'Congresista'),
-(3, 'Administrador'),
-(4, 'Revisor');
+(1, 'asistente'),
+(2, 'congresista');
 
 -- --------------------------------------------------------
 
@@ -219,7 +227,16 @@ INSERT INTO `tipos_de_participantes` (`id_tipo`, `tipo`) VALUES
 CREATE TABLE IF NOT EXISTS `tipo_de_actividades` (
 `id_tipo` int(11) NOT NULL,
   `tipo` varchar(250) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
+
+--
+-- Volcado de datos para la tabla `tipo_de_actividades`
+--
+
+INSERT INTO `tipo_de_actividades` (`id_tipo`, `tipo`) VALUES
+(1, 'taller'),
+(2, 'visita industrial'),
+(3, 'evento social');
 
 --
 -- Índices para tablas volcadas
@@ -293,32 +310,32 @@ ALTER TABLE `tipo_de_actividades`
 -- AUTO_INCREMENT de la tabla `actividades`
 --
 ALTER TABLE `actividades`
-MODIFY `id_actividad` int(11) NOT NULL AUTO_INCREMENT;
+MODIFY `id_actividad` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=9;
 --
 -- AUTO_INCREMENT de la tabla `articulos`
 --
 ALTER TABLE `articulos`
-MODIFY `id_articulo` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
+MODIFY `id_articulo` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT de la tabla `eventos`
 --
 ALTER TABLE `eventos`
-MODIFY `id_evento` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
+MODIFY `id_evento` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT de la tabla `participantes`
 --
 ALTER TABLE `participantes`
-MODIFY `id_participante` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=8;
+MODIFY `id_participante` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=11;
 --
 -- AUTO_INCREMENT de la tabla `tipos_de_participantes`
 --
 ALTER TABLE `tipos_de_participantes`
-MODIFY `id_tipo` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
+MODIFY `id_tipo` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT de la tabla `tipo_de_actividades`
 --
 ALTER TABLE `tipo_de_actividades`
-MODIFY `id_tipo` int(11) NOT NULL AUTO_INCREMENT;
+MODIFY `id_tipo` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
 --
 -- Restricciones para tablas volcadas
 --
