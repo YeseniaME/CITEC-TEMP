@@ -33,10 +33,15 @@ class Participantes extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
+			array('nombres, apellidos, email, contraseña, veri_contraseña', 'required'),//nuevo cosa
 			array('nombres, apellidos, email', 'length', 'max'=>250),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('id_participante, nombres, apellidos, email', 'safe', 'on'=>'search'),
+			array('contraseña','safe'),//nuevo cosa
+			array('veri_contraseña','safe'),// nueva cosas
+			array('email','email'),//validador de email
+			array('veri_contraseña','compare','compareAttribute'=>'contraseña','operator'=>'='),//cosa nueva
 		);
 	}
 
@@ -65,6 +70,8 @@ class Participantes extends CActiveRecord
 			'nombres' => 'Nombres',
 			'apellidos' => 'Apellidos',
 			'email' => 'Email',
+			'contraseña' => 'Contraseña', // nueva cosa
+			'veri_contraseña' => 'Verificar Contraseña'//nueva cosa
 		);
 	}
 
@@ -90,6 +97,8 @@ class Participantes extends CActiveRecord
 		$criteria->compare('nombres',$this->nombres,true);
 		$criteria->compare('apellidos',$this->apellidos,true);
 		$criteria->compare('email',$this->email,true);
+		$criteria->compare('contraseña',$this->contraseña,true);//cosa nueva
+		$criteria->compare('veri_contraseña',$this->veri_contraseña,true); // cosa nueva
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

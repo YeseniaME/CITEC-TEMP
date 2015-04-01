@@ -4,7 +4,7 @@
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3736.138410769463!2d-100.81252!3d20.541517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842cbabd3c2cd0ab%3A0x655a93bfa763b7ce!2sTecnologico+de+celaya+Campus+2!5e0!3m2!1ses!2s!4v1427825045855" 
     width="600" height="450" frameborder="0" style="border:0">
     </iframe>
-    <span class="close">
+    <span class="close"></span>
   </div>
 </div>
 
@@ -20,7 +20,7 @@
       <br>
       <img src="<?php echo $evento->logotipo; ?>">
     </center>
-    <span class="close">
+    <span class="close"></span>
   </div>
 </div>
 
@@ -354,6 +354,22 @@
                 <?php echo $form->error($model,'email'); ?>
               </div>
             </div>
+
+            <div class="form-group">
+             <div class="controls">
+              <?php echo $form->labelEx($model,'contraseña'); ?>
+              <?php echo $form->passwordField($model,'contraseña',array('size'=>60,'maxlength'=>250,'class'=>'form-control','placeholder'=>'Contraseña')); ?>
+              <?php echo $form->error($model,'contraseña'); ?>
+             </div>
+          </div>
+
+            <div class="form-group">
+              <div class="controls">
+              <?php echo $form->labelEx($model,'veri_contraseña'); ?>
+              <?php echo $form->passwordField($model,'veri_contraseña',array('size'=>60,'maxlength'=>250,'class'=>'form-control','placeholder'=>'Verificar Contraseña')); ?>
+              <?php echo $form->error($model,'veri_contraseña'); ?>           
+            </div>
+          </div>
             <button type="submit" class="btn btn-large btn-success">Registrar</button>
           </fieldset>
 

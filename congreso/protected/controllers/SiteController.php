@@ -69,6 +69,7 @@ class SiteController extends Controller
 			array('label'=>'Información', 'url'=>"#ourServices"),
 			array('label'=>'Especificaciones', 'url'=>"#portfolioSection"),
 			array('label'=>'Ponentes', 'url'=>"#meetourteamSection"),
+			array('label'=>'Registro', 'url'=>"#contactSection"),
 			
 		);
 
