@@ -51,12 +51,16 @@
         </div>
 
         <!--redes sociales-->
-        <a href="https://www.facebook.com/events/1420970331536992/">
         <div class="span4">
           <div class="info-img">
-            <img src="themes/img/facebook.png">
-            <img src="themes/img/twitter.png" height="160" width="160">
+            <a href="https://www.facebook.com/events/1420970331536992/">
+              <img src="themes/img/facebook.png" height="112" width="112">
+            </a>
+            <a href="http://www.twitter.com/xtendify">
+              <img src="themes/img/twitter.png" height="112" width="112">
+            </a>
           </div>
+          <br>
           <h4>Siguenos en</h4>
         </div>
         </a>
@@ -67,8 +71,8 @@
 
 <!-- CONTENEDOR: ESPECIFICACIONES -->
 <div id="portfolioSection">
-  <div class="span6">
-    <h1 class="cntr">Especificaciones</h1>
+  <div class="cntr">
+    <h1>Especificaciones</h1>
     <p>En esta sección ecnontrarás todo lo que necesitas saber acerca del evento. Haz clic sobre la opción que desees ver en el menú de abajo.</p>
   </div>
   <div class="container"> 
@@ -81,6 +85,7 @@
   <div class="clr"></div>
   <div class="tabbable tabs">
     <div class="tab-content label-primary">
+      <!-- costos -->
       <div class="tab-pane active" id="all">
         <ul class="thumbnails">
           <li class="span3">
@@ -126,42 +131,43 @@
         </ul>
       </div>
 
+      <!-- calenario -->
       <div class="tab-pane" id="web">
         <ul class="thumbnails">
-          <li class="span4">
+          <li class="span3">
             <div class="thumbnail">
               <div class="blockDtl">
               <a href="#myModal1" role="button" data-toggle="modal"><img src="themes/img/img-5.png" alt=""></a>
               </div>
             </div>
           </li>
-          <li class="span4">
+          <li class="span3">
             <div class="thumbnail">
               <div class="blockDtl">
               <a href="#"><img src="themes/img/img-4.png" alt=""></a>
               </div>
             </div>
           </li>
-          <li class="span4">
+          <li class="span3">
             <div class="thumbnail">
               <div class="blockDtl">
               <a href="#"><img src="themes/img/img-6.png" alt=""></a>
               </div>
             </div>
-          </li><li class="span4">
+          </li><li class="span3">
             <div class="thumbnail">
               <div class="blockDtl">
               <a href="#"><img src="themes/img/img-7.png" alt=""></a>
               </div>
             </div>
-          </li><li class="span4">
+          </li><li class="span3">
             <div class="thumbnail">
               <div class="blockDtl">
               <a href="#"><img src="themes/img/img-8.png" alt=""></a>
               </div>
             </div>
           </li>
-          <li class="span4">
+          <li class="span3">
             <div class="thumbnail">
               <div class="blockDtl">
               <a href="#"><img src="themes/img/img-9.png" alt=""></a>
@@ -171,42 +177,43 @@
         </ul>
       </div>
 
+      <!-- convocatoria -->
       <div class="tab-pane" id="mobile">
         <ul class="thumbnails">
-          <li class="span4">
+          <li class="span3">
             <div class="thumbnail">
               <div class="blockDtl">
               <a href="#myModal1" role="button" data-toggle="modal"><img src="themes/img/img-5.png" alt=""></a>
               </div>
             </div>
           </li>
-          <li class="span4">
+          <li class="span3">
             <div class="thumbnail">
               <div class="blockDtl">
               <a href="#"><img src="themes/img/img-6.png" alt=""></a>
               </div>
             </div>
           </li>
-          <li class="span4">
+          <li class="span3">
             <div class="thumbnail">
               <div class="blockDtl">
               <a href="#"><img src="themes/img/img-4.png" alt=""></a>
               </div>
             </div>
-          </li><li class="span4">
+          </li><li class="span3">
             <div class="thumbnail">
               <div class="blockDtl">
               <a href="#"><img src="themes/img/img-7.png" alt=""></a>
               </div>
             </div>
-          </li><li class="span4">
+          </li><li class="span3">
             <div class="thumbnail">
               <div class="blockDtl">
               <a href="#"><img src="themes/img/img-8.png" alt=""></a>
               </div>
             </div>
           </li>
-          <li class="span4">
+          <li class="span3">
             <div class="thumbnail">
               <div class="blockDtl">
               <a href="#"><img src="themes/img/img-9.png" alt=""></a>
@@ -215,23 +222,24 @@
           </li>     
         </ul>
       </div>
+      <!-- mas informacion -->
       <div class="tab-pane" id="photo">
         <ul class="thumbnails">
-          <li class="span4">
+          <li class="span3">
             <div class="thumbnail">
               <div class="blockDtl">
               <a href="#myModal1" role="button" data-toggle="modal"><img src="themes/img/img-7.png" alt=""></a>
               </div>
             </div>
           </li>
-          <li class="span4">
+          <li class="span3">
             <div class="thumbnail">
               <div class="blockDtl">
               <a href="#"><img src="themes/img/img-4.png" alt=""></a>
               </div>
             </div>
           </li>
-          <li class="span4">
+          <li class="span3">
             <div class="thumbnail">
               <div class="blockDtl">
               <a href="#"><img src="themes/img/img-6.png" alt=""></a>
@@ -310,7 +318,6 @@
       </div>
     </div>
 </div>
-
 
 
 <!-- CONTENEDOR: REGISTRO -->

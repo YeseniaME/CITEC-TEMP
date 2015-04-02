@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="utf-8">
   <title>CITEC | ITC</title>
 
   <link href="img/itc.png" rel="icon" type="image/x-icon" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
   <meta name="author" content="">
   <link id="callCss" rel="stylesheet" href="themes/css/bootstrap.min.css" type="text/css" media="screen" charset="utf-8" />
@@ -13,13 +13,14 @@
   <link id="callCss"rel="stylesheet" href="themes/css/style.css" type="text/css" media="screen" charset="utf-8" />
   <link href="themes/css/bootstrap-responsive.min.css" rel="stylesheet">
 
+
   <!-- CSS Modal -->
   <link rel="stylesheet" type="text/css" href="css/modal.css">
 
 </head>
 <body>
   <div id="headerSection">
-    <div class="container">
+   <div class="container">
       <div class="span3 logo">
         <a href="#">
           <img src="themes/img/super_logo2.png" alt="" />
@@ -40,9 +41,10 @@
         </div>
 
       <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+       <span class="icon-bar"></span>
+        <span style="color:#000;">Men&uacute;</span>
         <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
+        
       </button>
     </div>
   </div>
@@ -72,8 +74,7 @@
 <script src="themes/js/jquery.scrollTo-1.4.3.1-min.js" type="text/javascript"></script>
 <script src="themes/js/jquery.easing-1.3.min.js"></script>
 <script src="themes/js/default.js"></script>
-<script src="themes/js/query.min.js"></script> 
-
+<script src="themes/js/query.min.js"></script>
 
 <script type="text/javascript">
 
