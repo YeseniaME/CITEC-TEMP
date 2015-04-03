@@ -77,10 +77,10 @@
   </div>
   <div class="container"> 
     <ul class="nav nav-pills">
-      <a href="#all" data-toggle="tab">COSTOS</a></li>
-      <a href="#web" data-toggle="tab">CALENDARIO</a></li>
-      <a href="#mobile" data-toggle="tab">CONVOCATORIA</a></li>
-      <a href="#photo" data-toggle="tab">MÁS INFORMACIÓN</a></li>  
+      <a class="btn btn-large btn-success" href="#all" data-toggle="tab">Costos</a></li>
+      <a class="btn btn-large btn-success" href="#web" data-toggle="tab">Calendario</a></li>
+      <a class="btn btn-large btn-success" href="#mobile" data-toggle="tab">Convocatoria</a></li>
+      <a class="btn btn-large btn-success" href="#photo" data-toggle="tab" >Más Información</a></li>  
     </ul>
   <div class="clr"></div>
   <div class="tabbable tabs">
@@ -324,7 +324,7 @@
 <div id="contactSection">
   <div class="span8">
     <h1 class="cntr">Registro</h1>
-    <p><b>No te quedes fuera!</b> Inscribete para ser parte de los eventos de &eacute;ste <b>CITEC 2015</b></p></div>
+    <p><b>No te quedes fuera!</b> Inscribete para ser parte de los eventos de <b>CITEC 2015</b></p></div>
     <div class="container"> 
       <div class="row"> 
         <div class="span8">
@@ -339,9 +339,9 @@
             <!--nombre-->
             <div class="form-group">
               <div class="controls">
-                <?php echo $form->labelEx($model,'nombres'); ?>
+                <?php echo $form->labelEx($model,'nombres',array('class'=>'form-control')); ?>
                 <?php echo $form->textField($model,'nombres',
-                array('size'=>60,'maxlength'=>250,'class'=>'form-control','placeholder'=>'Nombre(s)')); ?>
+                  array('size'=>60,'maxlength'=>250,'class'=>'form-control','style'=>'height:40px;font-size:20px;width:800px;','placeholder'=>'Nombre(s)')); ?>
                 <?php echo $form->error($model,'nombres'); ?>
               </div>
             </div>
@@ -351,7 +351,7 @@
               <div class="controls">
                 <?php echo $form->labelEx($model,'apellidos'); ?>
                 <?php echo $form->textField($model,'apellidos',
-                array('size'=>60,'maxlength'=>250,'class'=>'form-control','placeholder'=>'Apellido(s)')); ?>
+                array('size'=>60,'maxlength'=>250,'class'=>'form-control','style'=>'height:40px;font-size:20px;width:800px;','placeholder'=>'Apellido(s)')); ?>
                 <?php echo $form->error($model,'apellidos'); ?>
               </div>
             </div>
@@ -361,7 +361,7 @@
               <div class="controls">
                 <?php echo $form->labelEx($model,'email'); ?>
                 <?php echo $form->textField($model,'email',
-                array('size'=>60,'maxlength'=>250,'class'=>'form-control','placeholder'=>'example@correo.com')); ?>
+                array('size'=>60,'maxlength'=>250,'class'=>'form-control','style'=>'height:40px;font-size:20px;width:800px;','placeholder'=>'example@correo.com')); ?>
                 <?php echo $form->error($model,'email'); ?>
               </div>
             </div>
@@ -370,7 +370,7 @@
              <div class="controls">
               <?php echo $form->labelEx($model,'contraseña'); ?>
               <?php echo $form->passwordField($model,'contraseña',
-              array('size'=>60,'maxlength'=>250,'class'=>'form-control','placeholder'=>'Contraseña')); ?>
+              array('size'=>60,'maxlength'=>250,'class'=>'form-control','style'=>'height:40px;font-size:20px;width:800px;','placeholder'=>'Contraseña')); ?>
               <?php echo $form->error($model,'contraseña'); ?>
              </div>
           </div>
@@ -379,7 +379,7 @@
               <div class="controls">
               <?php echo $form->labelEx($model,'veri_contraseña'); ?>
               <?php echo $form->passwordField($model,'veri_contraseña',
-              array('size'=>60,'maxlength'=>250,'class'=>'form-control','placeholder'=>'Contraseña')); ?>
+              array('size'=>60,'maxlength'=>250,'class'=>'form-control','style'=>'height:40px;font-size:20px;width:800px;','placeholder'=>'Contraseña')); ?>
               <?php echo $form->error($model,'veri_contraseña'); ?>           
             </div>
           </div>

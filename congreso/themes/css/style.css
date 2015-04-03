@@ -38,7 +38,7 @@ h1.brand {
  #portfolioSection, #ourServices, #blogSection{padding:70px 0 ; }
 .txtR{text-align:right}
 
-#ourServices{background: #fff; text-align: center;
+#ourServices{background: url(../../img/wg2.png);   text-align: center;
     border-top: 1px solid #fff;}
 #ourServices h4 {
     margin:25px 0;

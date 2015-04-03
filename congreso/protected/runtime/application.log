@@ -128,3 +128,73 @@ Stack trace:
 #19 {main}
 REQUEST_URI=/TAPW/yii/CITEC-TEMP/congreso/
 ---
+2015/04/01 21:49:34 [error] [exception.CException] exception 'CException' with message 'Property "Participantes.contraseÃ±a" is not defined.' in C:\xampp\htdocs\CITEC-TEMP\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\CITEC-TEMP\framework\db\ar\CActiveRecord.php(145): CComponent->__get('contrase\xC3\xB1a')
+#1 C:\xampp\htdocs\CITEC-TEMP\framework\web\helpers\CHtml.php(2728): CActiveRecord->__get('contrase\xC3\xB1a')
+#2 C:\xampp\htdocs\CITEC-TEMP\framework\web\helpers\CHtml.php(2451): CHtml::resolveValue(Object(Participantes), 'contrase\xC3\xB1a')
+#3 C:\xampp\htdocs\CITEC-TEMP\framework\web\helpers\CHtml.php(1807): CHtml::activeInputField('password', Object(Participantes), 'contrase\xC3\xB1a', Array)
+#4 C:\xampp\htdocs\CITEC-TEMP\framework\web\widgets\CActiveForm.php(838): CHtml::activePasswordField(Object(Participantes), 'contrase\xC3\xB1a', Array)
+#5 C:\xampp\htdocs\CITEC-TEMP\congreso\protected\views\site\index.php(366): CActiveForm->passwordField(Object(Participantes), 'contrase\xC3\xB1a', Array)
+#6 C:\xampp\htdocs\CITEC-TEMP\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\CITEC-TEMP\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\CITEC-TEMP\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#9 C:\xampp\htdocs\CITEC-TEMP\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#10 C:\xampp\htdocs\CITEC-TEMP\congreso\protected\controllers\SiteController.php(81): CController->render('index', Array)
+#11 C:\xampp\htdocs\CITEC-TEMP\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#12 C:\xampp\htdocs\CITEC-TEMP\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\CITEC-TEMP\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#14 C:\xampp\htdocs\CITEC-TEMP\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\htdocs\CITEC-TEMP\framework\web\CWebApplication.php(282): CController->run('')
+#16 C:\xampp\htdocs\CITEC-TEMP\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#17 C:\xampp\htdocs\CITEC-TEMP\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\CITEC-TEMP\congreso\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/CITEC-TEMP/congreso/
+---
+2015/04/02 04:23:33 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión.
+' in C:\xampp\htdocs\CITEC-TEMP\framework\db\CDbConnection.php:399
+Stack trace:
+#0 C:\xampp\htdocs\CITEC-TEMP\framework\db\CDbConnection.php(347): CDbConnection->open()
+#1 C:\xampp\htdocs\CITEC-TEMP\framework\db\CDbConnection.php(325): CDbConnection->setActive(true)
+#2 C:\xampp\htdocs\CITEC-TEMP\framework\base\CModule.php(394): CDbConnection->init()
+#3 C:\xampp\htdocs\CITEC-TEMP\framework\base\CApplication.php(458): CModule->getComponent('db')
+#4 C:\xampp\htdocs\CITEC-TEMP\framework\db\ar\CActiveRecord.php(637): CApplication->getDb()
+#5 C:\xampp\htdocs\CITEC-TEMP\framework\db\ar\CActiveRecord.php(1433): CActiveRecord->getDbConnection()
+#6 C:\xampp\htdocs\CITEC-TEMP\framework\db\ar\CActiveRecord.php(1489): CActiveRecord->getTableAlias(true)
+#7 C:\xampp\htdocs\CITEC-TEMP\congreso\protected\controllers\SiteController.php(44): CActiveRecord->findByPk('1')
+#8 C:\xampp\htdocs\CITEC-TEMP\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#9 C:\xampp\htdocs\CITEC-TEMP\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\CITEC-TEMP\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\CITEC-TEMP\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\xampp\htdocs\CITEC-TEMP\framework\web\CWebApplication.php(282): CController->run('')
+#13 C:\xampp\htdocs\CITEC-TEMP\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#14 C:\xampp\htdocs\CITEC-TEMP\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\CITEC-TEMP\congreso\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/CITEC-TEMP/congreso/
+---
+2015/04/03 03:41:43 [error] [exception.CException] exception 'CException' with message 'Property "Participantes.nombre" is not defined.' in C:\xampp\htdocs\CITEC-TEMP\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\CITEC-TEMP\framework\db\ar\CActiveRecord.php(145): CComponent->__get('nombre')
+#1 C:\xampp\htdocs\CITEC-TEMP\framework\web\helpers\CHtml.php(2728): CActiveRecord->__get('nombre')
+#2 C:\xampp\htdocs\CITEC-TEMP\framework\web\helpers\CHtml.php(2451): CHtml::resolveValue(Object(Participantes), 'nombre')
+#3 C:\xampp\htdocs\CITEC-TEMP\framework\web\helpers\CHtml.php(1533): CHtml::activeInputField('text', Object(Participantes), 'nombre', Array)
+#4 C:\xampp\htdocs\CITEC-TEMP\framework\web\widgets\CActiveForm.php(792): CHtml::activeTextField(Object(Participantes), 'nombre', Array)
+#5 C:\xampp\htdocs\CITEC-TEMP\congreso\protected\views\site\index.php(352): CActiveForm->textField(Object(Participantes), 'nombre', Array)
+#6 C:\xampp\htdocs\CITEC-TEMP\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\CITEC-TEMP\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\CITEC-TEMP\framework\web\CController.php(869): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#9 C:\xampp\htdocs\CITEC-TEMP\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#10 C:\xampp\htdocs\CITEC-TEMP\congreso\protected\controllers\SiteController.php(81): CController->render('index', Array)
+#11 C:\xampp\htdocs\CITEC-TEMP\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#12 C:\xampp\htdocs\CITEC-TEMP\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\CITEC-TEMP\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#14 C:\xampp\htdocs\CITEC-TEMP\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\htdocs\CITEC-TEMP\framework\web\CWebApplication.php(282): CController->run('')
+#16 C:\xampp\htdocs\CITEC-TEMP\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#17 C:\xampp\htdocs\CITEC-TEMP\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\CITEC-TEMP\congreso\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/CITEC-TEMP/congreso/
+---
