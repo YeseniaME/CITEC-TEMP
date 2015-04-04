@@ -11,6 +11,7 @@
  * @property string $fecha_inicio
  * @property string $fecha_fin
  * @property string $lugar
+ * @property double $costo
  *
  * The followings are the available model relations:
  * @property Eventos $idEvento
@@ -36,13 +37,14 @@ class Actividades extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('id_tipo, id_evento', 'required'),
+			array('id_tipo, id_evento, costo', 'required'),
 			array('id_tipo, id_evento', 'numerical', 'integerOnly'=>true),
+			array('costo', 'numerical'),
 			array('nombre, lugar', 'length', 'max'=>250),
 			array('fecha_inicio, fecha_fin', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id_actividad, id_tipo, id_evento, nombre, fecha_inicio, fecha_fin, lugar', 'safe', 'on'=>'search'),
+			array('id_actividad, id_tipo, id_evento, nombre, fecha_inicio, fecha_fin, lugar, costo', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -74,6 +76,7 @@ class Actividades extends CActiveRecord
 			'fecha_inicio' => 'Fecha Inicio',
 			'fecha_fin' => 'Fecha Fin',
 			'lugar' => 'Lugar',
+			'costo' => 'Costo',
 		);
 	}
 
@@ -102,6 +105,7 @@ class Actividades extends CActiveRecord
 		$criteria->compare('fecha_inicio',$this->fecha_inicio,true);
 		$criteria->compare('fecha_fin',$this->fecha_fin,true);
 		$criteria->compare('lugar',$this->lugar,true);
+		$criteria->compare('costo',$this->costo);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

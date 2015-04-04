@@ -77,10 +77,10 @@
   </div>
   <div class="container"> 
     <ul class="nav nav-pills">
-      <a class="btn btn-large btn-success" href="#all" data-toggle="tab">Costos</a></li>
-      <a class="btn btn-large btn-success" href="#web" data-toggle="tab">Calendario</a></li>
-      <a class="btn btn-large btn-success" href="#mobile" data-toggle="tab">Convocatoria</a></li>
-      <a class="btn btn-large btn-success" href="#photo" data-toggle="tab" >Más Información</a></li>  
+      <a class="btn btn-large btn-success" href="#all" data-toggle="tab">Talleres</a></li>
+      <a class="btn btn-large btn-success" href="#web" data-toggle="tab">Visitas Industriales</a></li>
+      <a class="btn btn-large btn-success" href="#mobile" data-toggle="tab">Eventos Sociales</a></li>
+      <!--<a class="btn btn-large btn-success" href="#photo" data-toggle="tab" >Más Información</a></li>-->
     </ul>
   <div class="clr"></div>
   <div class="tabbable tabs">
@@ -88,138 +88,68 @@
       <!-- costos -->
       <div class="tab-pane active" id="all">
         <ul class="thumbnails">
+         <?php 
+                   foreach ($talleres as $key => $value) {
+                ?>
           <li class="span3">
             <div class="thumbnail">
               <div class="blockDtl">
-              <a href="#myModal1" role="button"  data-toggle="modal"><img src="themes/img/img-4.png" alt=""></a>
+               
+                    <h4><?php echo $value->nombre; ?></h4>
+                    <h5><?php echo $value->fecha_inicio; ?></h5>
+                    <h5><?php echo $value->fecha_fin; ?></h5>
+                    <h5><?php echo $value->lugar; ?></h5>
+                    <h5><?php echo $value->costo; ?></h5>
+                   <a href="#" class="btn btn-large btn-default">Detalles</a>
+             
               </div>
             </div>
-          </li>
-          <li class="span3">
-            <div class="thumbnail">
-              <div class="blockDtl">
-              <a href="#"><img src="themes/img/img-5.png" alt=""></a>
-              </div>
-            </div>
-          </li>
-          <li class="span3">
-            <div class="thumbnail">
-              <div class="blockDtl">
-              <a href="#"><img src="themes/img/img-6.png" alt=""></a>
-              </div>
-            </div>
-          </li><li class="span3">
-            <div class="thumbnail">
-              <div class="blockDtl">
-              <a href="#"><img src="themes/img/img-7.png" alt=""></a>
-              </div>
-            </div>
-          </li><li class="span3">
-            <div class="thumbnail">
-              <div class="blockDtl">
-              <a href="#"><img src="themes/img/img-8.png" alt=""></a>
-              </div>
-            </div>
-          </li>
-          <li class="span3">
-            <div class="thumbnail">
-              <div class="blockDtl">
-              <a href="#"><img src="themes/img/img-9.png" alt=""></a>
-              </div>
-            </div>
-          </li>   
+          </li> 
+           <?php } ?>
         </ul>
       </div>
 
       <!-- calenario -->
       <div class="tab-pane" id="web">
         <ul class="thumbnails">
+          <?php 
+                   foreach ($industrial as $key => $value) {
+                ?>
           <li class="span3">
             <div class="thumbnail">
               <div class="blockDtl">
-              <a href="#myModal1" role="button" data-toggle="modal"><img src="themes/img/img-5.png" alt=""></a>
+              <h4><?php echo $value->nombre; ?></h4>
+                    <h5><?php echo $value->fecha_inicio; ?></h5>
+                    <h5><?php echo $value->fecha_fin; ?></h5>
+                    <h5><?php echo $value->lugar; ?></h5>
+                    <h5><?php echo $value->costo; ?></h5>
+                   <a href="#" class="btn btn-large btn-default">Detalles</a>
               </div>
             </div>
-          </li>
-          <li class="span3">
-            <div class="thumbnail">
-              <div class="blockDtl">
-              <a href="#"><img src="themes/img/img-4.png" alt=""></a>
-              </div>
-            </div>
-          </li>
-          <li class="span3">
-            <div class="thumbnail">
-              <div class="blockDtl">
-              <a href="#"><img src="themes/img/img-6.png" alt=""></a>
-              </div>
-            </div>
-          </li><li class="span3">
-            <div class="thumbnail">
-              <div class="blockDtl">
-              <a href="#"><img src="themes/img/img-7.png" alt=""></a>
-              </div>
-            </div>
-          </li><li class="span3">
-            <div class="thumbnail">
-              <div class="blockDtl">
-              <a href="#"><img src="themes/img/img-8.png" alt=""></a>
-              </div>
-            </div>
-          </li>
-          <li class="span3">
-            <div class="thumbnail">
-              <div class="blockDtl">
-              <a href="#"><img src="themes/img/img-9.png" alt=""></a>
-              </div>
-            </div>
-          </li>     
+          </li>  
+            <?php } ?> 
         </ul>
       </div>
 
       <!-- convocatoria -->
       <div class="tab-pane" id="mobile">
         <ul class="thumbnails">
+         <?php 
+                   foreach ($eventoSocial as $key => $value) {
+                ?>
           <li class="span3">
             <div class="thumbnail">
               <div class="blockDtl">
-              <a href="#myModal1" role="button" data-toggle="modal"><img src="themes/img/img-5.png" alt=""></a>
+               <h4><?php echo $value->nombre; ?></h4>
+                    <h5><?php echo $value->fecha_inicio; ?></h5>
+                    <h5><?php echo $value->fecha_fin; ?></h5>
+                    <h5><?php echo $value->lugar; ?></h5>
+                    <h5><?php echo $value->costo; ?></h5>
+                   <a href="#" class="btn btn-large btn-default">Detalles</a>
               </div>
             </div>
           </li>
-          <li class="span3">
-            <div class="thumbnail">
-              <div class="blockDtl">
-              <a href="#"><img src="themes/img/img-6.png" alt=""></a>
-              </div>
-            </div>
-          </li>
-          <li class="span3">
-            <div class="thumbnail">
-              <div class="blockDtl">
-              <a href="#"><img src="themes/img/img-4.png" alt=""></a>
-              </div>
-            </div>
-          </li><li class="span3">
-            <div class="thumbnail">
-              <div class="blockDtl">
-              <a href="#"><img src="themes/img/img-7.png" alt=""></a>
-              </div>
-            </div>
-          </li><li class="span3">
-            <div class="thumbnail">
-              <div class="blockDtl">
-              <a href="#"><img src="themes/img/img-8.png" alt=""></a>
-              </div>
-            </div>
-          </li>
-          <li class="span3">
-            <div class="thumbnail">
-              <div class="blockDtl">
-              <a href="#"><img src="themes/img/img-9.png" alt=""></a>
-              </div>
-            </div>
-          </li>     
+            <?php } ?> 
         </ul>
       </div>
       <!-- mas informacion -->
@@ -228,27 +158,12 @@
           <li class="span3">
             <div class="thumbnail">
               <div class="blockDtl">
-              <a href="#myModal1" role="button" data-toggle="modal"><img src="themes/img/img-7.png" alt=""></a>
+              aqui metelas las cosas<a href="#myModal1" role="button" data-toggle="modal"><img src="themes/img/img-7.png" alt=""></a>
               </div>
             </div>
           </li>
-          <li class="span3">
-            <div class="thumbnail">
-              <div class="blockDtl">
-              <a href="#"><img src="themes/img/img-4.png" alt=""></a>
-              </div>
-            </div>
-          </li>
-          <li class="span3">
-            <div class="thumbnail">
-              <div class="blockDtl">
-              <a href="#"><img src="themes/img/img-6.png" alt=""></a>
-              </div>
-            </div>
-          </li>  
         </ul>
       </div>
-      <a href="#" class="btn btn-large btn-default">Detalles</a>
     </div>
   </div>
 </div>

@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 01-04-2015 a las 19:52:53
+-- Tiempo de generación: 04-04-2015 a las 17:42:44
 -- Versión del servidor: 5.6.20
 -- Versión de PHP: 5.5.15
 
@@ -33,18 +33,21 @@ CREATE TABLE IF NOT EXISTS `actividades` (
   `nombre` varchar(250) DEFAULT NULL,
   `fecha_inicio` datetime DEFAULT NULL,
   `fecha_fin` datetime DEFAULT NULL,
-  `lugar` varchar(250) DEFAULT NULL
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=9 ;
+  `lugar` varchar(250) DEFAULT NULL,
+  `costo` float NOT NULL
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=11 ;
 
 --
 -- Volcado de datos para la tabla `actividades`
 --
 
-INSERT INTO `actividades` (`id_actividad`, `id_tipo`, `id_evento`, `nombre`, `fecha_inicio`, `fecha_fin`, `lugar`) VALUES
-(1, 1, 1, 'android', '2015-03-19 00:00:00', '2015-03-20 05:00:00', 'lab 1'),
-(2, 2, 1, 'centro de computo', '2015-03-27 00:00:00', '2015-03-27 00:19:00', 'centro de computo itc'),
-(7, 1, 1, 'mant de laptop', '2015-03-21 00:00:00', '2015-03-21 08:00:00', 'itc'),
-(8, 1, 1, 'videojuego', '2015-03-19 03:00:00', '2015-03-20 05:00:00', 'uno');
+INSERT INTO `actividades` (`id_actividad`, `id_tipo`, `id_evento`, `nombre`, `fecha_inicio`, `fecha_fin`, `lugar`, `costo`) VALUES
+(1, 1, 1, 'android', '2015-03-19 00:00:00', '2015-03-20 05:00:00', 'lab 1', 0),
+(2, 2, 1, 'centro de computo', '2015-03-27 00:00:00', '2015-03-27 00:19:00', 'centro de computo itc', 0),
+(7, 2, 1, 'mant de laptop', '2015-03-21 00:00:00', '2015-03-21 08:00:00', 'itc', 0),
+(8, 1, 1, 'videojuego', '2015-03-19 03:00:00', '2015-03-20 05:00:00', 'uno', 0),
+(9, 3, 1, 'fiesta social', '2015-05-08 00:00:00', '2015-05-06 00:00:00', 'un antro', 1000),
+(10, 3, 1, 'fiesta social', '2015-04-03 00:00:00', '2015-04-10 00:00:00', 'otro antro', 1500);
 
 -- --------------------------------------------------------
 
@@ -74,7 +77,6 @@ CREATE TABLE IF NOT EXISTS `eventos` (
   `nombre` varchar(250) DEFAULT NULL,
   `logotipo` varchar(250) DEFAULT NULL,
   `convocatoria` varchar(250) DEFAULT NULL,
-  `costo` text,
   `fecha_inicio` datetime DEFAULT NULL,
   `fecha_fin` datetime DEFAULT NULL,
   `lugar` varchar(250) DEFAULT NULL,
@@ -85,8 +87,8 @@ CREATE TABLE IF NOT EXISTS `eventos` (
 -- Volcado de datos para la tabla `eventos`
 --
 
-INSERT INTO `eventos` (`id_evento`, `nombre`, `logotipo`, `convocatoria`, `costo`, `fecha_inicio`, `fecha_fin`, `lugar`, `mas_informacion`) VALUES
-(1, 'Evento-1', 'img\\logo-placeholder.jpg', 'con.pdf', '$400', '2015-03-20 00:00:00', '2015-03-27 00:00:00', 'Salon AG3', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis elementum risus nec odio rutrum faucibus. Nam lectus urna, elementum sed feugiat at, scelerisque lobortis metus.');
+INSERT INTO `eventos` (`id_evento`, `nombre`, `logotipo`, `convocatoria`, `fecha_inicio`, `fecha_fin`, `lugar`, `mas_informacion`) VALUES
+(1, 'Evento-1', 'img\\logo-placeholder.jpg', 'con.pdf', '2015-03-20 00:00:00', '2015-03-27 00:00:00', 'Salon AG3', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis elementum risus nec odio rutrum faucibus. Nam lectus urna, elementum sed feugiat at, scelerisque lobortis metus.');
 
 -- --------------------------------------------------------
 
@@ -310,7 +312,7 @@ ALTER TABLE `tipo_de_actividades`
 -- AUTO_INCREMENT de la tabla `actividades`
 --
 ALTER TABLE `actividades`
-MODIFY `id_actividad` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=9;
+MODIFY `id_actividad` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=11;
 --
 -- AUTO_INCREMENT de la tabla `articulos`
 --

@@ -8,7 +8,6 @@
  * @property string $nombre
  * @property string $logotipo
  * @property string $convocatoria
- * @property string $costo
  * @property string $fecha_inicio
  * @property string $fecha_fin
  * @property string $lugar
@@ -38,10 +37,10 @@ class Eventos extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('nombre, logotipo, convocatoria, lugar', 'length', 'max'=>250),
-			array('costo, fecha_inicio, fecha_fin, mas_informacion', 'safe'),
+			array('fecha_inicio, fecha_fin, mas_informacion', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id_evento, nombre, logotipo, convocatoria, costo, fecha_inicio, fecha_fin, lugar, mas_informacion', 'safe', 'on'=>'search'),
+			array('id_evento, nombre, logotipo, convocatoria, fecha_inicio, fecha_fin, lugar, mas_informacion', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -69,7 +68,6 @@ class Eventos extends CActiveRecord
 			'nombre' => 'Nombre',
 			'logotipo' => 'Logotipo',
 			'convocatoria' => 'Convocatoria',
-			'costo' => 'Costo',
 			'fecha_inicio' => 'Fecha Inicio',
 			'fecha_fin' => 'Fecha Fin',
 			'lugar' => 'Lugar',
@@ -99,7 +97,6 @@ class Eventos extends CActiveRecord
 		$criteria->compare('nombre',$this->nombre,true);
 		$criteria->compare('logotipo',$this->logotipo,true);
 		$criteria->compare('convocatoria',$this->convocatoria,true);
-		$criteria->compare('costo',$this->costo,true);
 		$criteria->compare('fecha_inicio',$this->fecha_inicio,true);
 		$criteria->compare('fecha_fin',$this->fecha_fin,true);
 		$criteria->compare('lugar',$this->lugar,true);

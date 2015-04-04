@@ -44,17 +44,34 @@ class SiteController extends Controller
 		$evento = Eventos::model()->findByPk('1');
 
 		$criteria= new CDbCriteria(); 
+		$taller= new CDbCriteria(); 
+		$visita= new CDbCriteria(); 
+		$social= new CDbCriteria(); 
 	      $participantes  = Participantes::model()->tablename();
           $participantestipo = ParticipantesTipos::model()->tablename();
           $tiposparticipante = TiposDeParticipantes::model()->tablename();
+          $eventosTaller = Actividades::model()->tablename();
 
-          $criteria->select = 't.nombres,t.apellidos,t.email';
+        $criteria->select = 't.nombres,t.apellidos,t.email';
         $criteria->join =
            'inner join '.$participantestipo.' pt on t.id_participante=pt.id_participante
             inner join '.$tiposparticipante.' tp on tp.id_tipo=pt.id_tipo';
         $criteria->compare('tp.tipo','congresista',true);
 
-		     $participante = Participantes::model()->findAll($criteria);
+        $taller->select='t.nombre,t.fecha_inicio,t.fecha_fin,t.lugar,t.costo';
+        $taller->compare('t.id_tipo','1',true);
+
+        $visita->select='t.nombre,t.fecha_inicio,t.fecha_fin,t.lugar,t.costo';
+        $visita->compare('t.id_tipo','2',true);
+
+        $social->select='t.nombre,t.fecha_inicio,t.fecha_fin,t.lugar,t.costo';
+        $social->compare('t.id_tipo','3',true);
+
+        $talleres = Actividades::model()->findAll($taller);
+        $industrial = Actividades::model()->findAll($visita);
+        $eventoSocial = Actividades::model()->findAll($social);
+
+		$participante = Participantes::model()->findAll($criteria);
 
 		$model=new Participantes;
 
@@ -78,6 +95,9 @@ class SiteController extends Controller
 			'evento'=>$evento,
 			'model'=>$model,
 			'participante'=>$participante,
+			'talleres'=>$talleres,
+			'industrial'=>$industrial,
+			'eventoSocial'=>$eventoSocial,
 		));
 	}
 
