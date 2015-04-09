@@ -180,7 +180,7 @@
         <div class="inner">
           <h1>Lineamientos</h1>
           <p>Eespecificación de lineamientos necesarios para la publicación de artículos</p>
-          <a href="#" class="btn btn-large btn-success">Ver Documento</a>
+          <a href="convocatorias/sitec-conv.pdf" class="btn btn-large btn-success">Ver Documento</a>
         </div>
       </div>
     </div>
@@ -193,7 +193,7 @@
         <div class="inner">
           <h1>Formato</h1>
           <p>Conozca y descargue el formato para el artículo final.</p>
-          <a href="#" class="btn btn-large btn-success">Ver Documento</a>
+          <a href="programasAct/programa_sitec.pdf" class="btn btn-large btn-success">Ver Documento</a>
         </div>
       </div>
     </div>
